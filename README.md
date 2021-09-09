@@ -10,6 +10,8 @@ Insgesamt wurden 1107 Stellenanzeigen identifiziert, von denen 799 für die Ausw
 
 Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschreibungen in bestimmten Fällen, beispielsweise wenn Stellen für Promovierende in Graduiertenkollegs ausgeschrieben werden, nicht nur auf eine, sondern mehrere gleichartige Stellen beziehen. Da solche Ausschreibungen meist nicht ausschließlich romanistische Profile haben und der Einfachheit halber werden diese Stellen wurden hier nur einmalig gezählt. 
 
+Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner `data` verfügbar. 
+
 ## Vertragslaufzeiten 
 
 Zunächst ein Blick auf die Laufzeiten der ausgeschriebenen Stellen über den gesamten Untersuchungszeitraum. 
