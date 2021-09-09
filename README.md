@@ -24,7 +24,7 @@ Die Vertragslaufzeiten wurden gruppiert: Das bedeutet dass beispielsweise die Ka
 
 Es wird ersichtlich, dass eine deutliche Mehrheit (63.2%) der Stellenanzeigen eine Vertragslaufzeit von rund 36 Monaten (37.3%) oder rund 24 Monaten (25.5%) vorsehen. Andere Laufzeiten liegen teil knapp, knapp deutlich unter 10%. Der Anteil der unbefristet ausgeschrieben Stellen liegt bei 10.8%. 
 
-Bei der Einordnung dieser Zahlen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen, nicht die Vertragslaufzeiten der aktuell aktiven Wissenschaftler:innen erfasst wurde. 
+Bei der Einordnung dieser Zahlen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen erfasst wurden, nicht die Vertragslaufzeiten der aktuell aktiven Wissenschaftler:innen. 
 
 
 ## Stellenumfang 
