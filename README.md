@@ -18,7 +18,7 @@ Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 a
 
 Zunächst ein Blick auf die Laufzeiten der ausgeschriebenen Stellen über den gesamten Untersuchungszeitraum. 
 
-![Abbildung 1](img/romanistik_befristungsdauer.svg)
+<img src="img/romanistik_befristungsdauer.svg"/>
 
 Die Vertragslaufzeiten wurden gruppiert: Das bedeutet dass beispielsweise die Kategorie "~24" nicht nur Stellen umfasst, die für exakt 24 Monate ausgeschrieben waren, sondern auch solche, die mindestens 18 und weniger als 30 Monate Vertragslaufzeit hatten.
 
