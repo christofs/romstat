@@ -56,7 +56,7 @@ Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben
 
 ![](img/romanistik_jahr-dauer_barchart.svg)
 
-Die Darstellung zeigt die Anteile (in Prozent) der verschiedenen Vertragslaufzeiten in jedem der untersuchten Jahre (2014-2021). Die Vertragslaufzeiten wurden gruppiert: Das bedeutet dass beispielsweise die Kategorie "~24" nicht nur Stellen umfasst, die für exakt 24 Monate ausgeschrieben waren, sondern auch solche, die mindestens 18 und weniger als 30 Monate Vertragslaufzeit hatten. 
+Die Darstellung zeigt die Anteile (in Prozent) der verschiedenen Vertragslaufzeiten in jedem der untersuchten Jahre (2014-2021). Die Vertragslaufzeiten wurden auch hier gruppiert. Es zeigt sich, dass die Verhältnisse über die Jahre insgesamt relativ stabil sind, ohne klare Trends zu Anstieg oder Absinken bestimmter Vertragslaufzeiten. 
 
 
 
