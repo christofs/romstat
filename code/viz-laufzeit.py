@@ -37,7 +37,7 @@ def viz(data,n):
 	chart = pygal.HorizontalBar(
 		style=BlueStyle,
 		print_values = True,
-		show_legend = True,
+		show_legend = False,
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 9,
 		legend_box_size=24)
