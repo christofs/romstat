@@ -13,7 +13,7 @@ from collections import Counter
 
 
 def get_data(): 
-	with open("romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
+	with open("../data/romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
 		print(data.head())
 		return data
@@ -34,7 +34,7 @@ def prepare_data(data):
 
 
 def viz(data,n): 
-	chart = pygal.Bar(
+	chart = pygal.HorizontalBar(
 		style=BlueStyle,
 		print_values = True,
 		show_legend = True,
@@ -52,7 +52,7 @@ def viz(data,n):
 	chart.add("~72", data["~72"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
 	chart.add("78+", data["78+"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
 	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.render_to_file("romanistik_befristungsdauer.svg")
+	chart.render_to_file("../img/romanistik_befristungsdauer.svg")
 			
 			
 
