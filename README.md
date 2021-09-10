@@ -15,11 +15,6 @@ Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschre
 Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. 
 
 
-## Stellentypen 
-
-(Eine Auswertung der Stellentypen folgt.)
-
-
 ## Vertragslaufzeiten 
 
 Zunächst ein Blick auf die Laufzeiten der ausgeschriebenen Stellen über den gesamten Untersuchungszeitraum. 
@@ -31,6 +26,11 @@ Die Vertragslaufzeiten wurden gruppiert: Das bedeutet, dass beispielsweise die K
 Es wird ersichtlich, dass eine deutliche Mehrheit (63.2%) der Stellenanzeigen eine Vertragslaufzeit von rund 36 Monaten (37.3%) oder rund 24 Monaten (25.5%) vorsehen. Andere Laufzeiten liegen teils knapp, teils deutlich unter 10%. Der Anteil der unbefristet ausgeschrieben Stellen liegt bei 10.8%. 
 
 Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt sich sicherlich in großen Teilen durch entsprechende Laufzeiten bspw. von Doktorand:innenstellen in Graduiertenkollegs oder typischen Projektlaufzeiten bei DFG-geförderten Drittmittelvorhaben. Der hohe Anteil von Ausschreibungen mit einer Laufzeit von nur 2 Jahren erklärt sich daraus jedoch nicht. Bei der Einordnung der Zahlen zu den unbefristeten Stellen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen erfasst wurden, nicht der Anteil der aktuell aktiven Wissenschaftler:innen in der Romanistik, die unbefristete Stellen innehaben. 
+
+
+## Stellentypen 
+
+![](img/romanistik_stellentyp.svg)
 
 
 ## Stellenumfang
