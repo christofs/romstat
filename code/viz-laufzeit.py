@@ -43,15 +43,15 @@ def viz(data,n):
 		legend_box_size=24)
 	chart.title = "Vertragslaufzeiten"
 	chart.x_title = "Anteile der Nennungen verschiedener Vertragslaufzeiten\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(n)+")"
-	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("~72", data["~72"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("78+", data["78+"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 {:.1f}%'.format(x))
+	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 {:.1f}%'.format(x))
+	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 {:.1f}%'.format(x))
+	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '~36 {:.1f}%'.format(x))
+	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '~48 {:.1f}%'.format(x))
+	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 {:.1f}%'.format(x))
+	chart.add("~72", data["~72"]/n*100, formatter=lambda x: '~72 {:.1f}%'.format(x))
+	chart.add("78+", data["78+"]/n*100, formatter=lambda x: '78+ {:.1f}%'.format(x))
+	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unb. {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_befristungsdauer.svg")
 			
 			
