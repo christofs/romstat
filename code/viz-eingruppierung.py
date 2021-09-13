@@ -23,14 +23,14 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "umfang_prozent"]]
+	data = data.loc[:,["include", "gehalt_norm"]]
 	data = data[data["include"] == 1]
-	data = data[data["umfang_prozent"] != "N/A"]
+	data = data[data["gehalt_norm"] != 0]
 	print(data.head())
 	n = data.shape[0]
 	print("Anzahl der Datenpunkte", n)
 	from collections import Counter
-	data = dict(Counter(list(data.loc[:,"umfang_prozent"])))
+	data = dict(Counter(list(data.loc[:,"gehalt_norm"])))
 	print(data)
 	return data,n
 
@@ -47,20 +47,20 @@ def viz(data,n):
 	chart = pygal.HorizontalBar(
 		style=dark_lighten_style,
 		print_values = True,
-		show_legend = False,
+		show_legend = True,
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 7,
 		legend_box_size=40)
-	chart.title = "Stellenumfang"
-	chart.x_title = "Anteile des Stellenumfangs in Prozent (n="+str(n)+")"
-	chart.add("25%", data[25]/n*100, formatter=lambda x: '~25%: {:.1f}%'.format(x))
-	chart.add("50%", data[50]/n*100, formatter=lambda x: '~50%: {:.1f}%'.format(x))
-	chart.add("65%", data[65]/n*100, formatter=lambda x: '~65%: {:.1f}%'.format(x))
-	chart.add("75%", data[75]/n*100, formatter=lambda x: '~75%: {:.1f}%'.format(x))
-	chart.add("80%", data[80]/n*100, formatter=lambda x: '~80%: {:.1f}%'.format(x))
-	chart.add("90%", data[90]/n*100, formatter=lambda x: '~90%: {:.1f}%'.format(x))
-	chart.add("100%", data[100]/n*100, formatter=lambda x: '~100%: {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_stellenumfang.svg")
+	chart.title = "Gehaltsstufen"
+	chart.x_title = "Anteile der Gehaltsstufen\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(n)+")"
+	chart.add("E11", data["E11"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("E13", data["E13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("A13", data["A13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("E14", data["E14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("A14", data["A14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("E15", data["E15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("A15", data["A15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_eingruppierung.svg")
 			
 			
 
