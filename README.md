@@ -54,42 +54,41 @@ Wenig überraschend ist, dass die Gehaltsgruppe E13 die ausgeschriebenen Stellen
 
 ## (7) Vertragslaufzeiten und Stellentypen 
 
-Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8% und die Stellentypen, für die ein entfristetes Stellenangebot üblich ist, sind begrenzt (vor allem: LfbA, Lektorat, Rat). Aber werden solche Stellentypen auch tatsächlich mehrheitlich unbefristet ausgeschrieben? 
+Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8%. Es ist daher von Interesse, wie sich die unbefristeten Stellen in die Stellentypen aufgliedern und wie verbreitet unbefristete Ausschreibungen für verschiedene Stellentypen sind. 
 
-
-### (7.1) Vertragslaufzeiten bei Lektoratsstellen
-
-![](img/romanistik_laufzeit-lektorat.svg)
-
-Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
-
-
-### (7.2) Vertragslaufzeiten bei LfbA-Stellen
-
-![](img/romanistik_laufzeit-lfba.svg)
-
-Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
-
-### (7.3) Vertragslaufzeiten bei Ratsstellen
-
-![](img/romanistik_laufzeit-rat.svg)
-
-Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
-
-### (7.4) Vertragslaufzeiten bei WMA-Stellen
-
-![](img/romanistik_laufzeit-wma.svg)
-
-Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
-
-
-### (7.5) Unbefristete Stellentypen
+### (7.1) Unbefristete Stellentypen
 
 Für den Anteil der unbefristet ausgeschrieben Stellen (siehe oben) ist von Interesse, welchen Stellenkategorien diese angehören. 
 
 ![](img/romanistik_unbefristete-stellentypen.svg)
 
 Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben Stellen den Kategorien 'Lehrkraft für besondere Aufgaben' (28.7%) oder 'Lektorat' (25.3%) angehören. Beide Stellenkategorien zeichnen sich in der Regel durch hohe Lehrdeputate aus. Auch die Ratsstellen (Studienrat/Studienrätin oder Akademische/r Rat oder Rätin) haben einen signifikanten Anteil (19.5%), ebenso wie die nicht weiter bestimmten Stellen als Wissenschaftliche/r Mitarbeiter/in (17.5%). Die übrigen Stellen betreffen verschiedene Stellenkategorien, beispielsweise Leitungsfunktionen in Sprachenzentren oder Verlagen.   
+
+
+### (7.2) Vertragslaufzeiten bei Lektoratsstellen
+
+![](img/romanistik_laufzeit-lektorat.svg)
+
+Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
+
+
+### (7.3) Vertragslaufzeiten bei LfbA-Stellen
+
+![](img/romanistik_laufzeit-lfba.svg)
+
+Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
+
+### (7.4) Vertragslaufzeiten bei Ratsstellen
+
+![](img/romanistik_laufzeit-rat.svg)
+
+Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
+
+### (7.5) Vertragslaufzeiten bei WMA-Stellen
+
+![](img/romanistik_laufzeit-wma.svg)
+
+Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
 
 
 ## (8) Vertragslaufzeiten pro Jahr
