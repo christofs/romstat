@@ -52,7 +52,7 @@ def viz(data,n):
 		legend_at_bottom_columns = 9,
 		legend_box_size=24)
 	chart.title = "Vertragslaufzeiten"
-	chart.x_title = "Anteile der Nennungen verschiedener Vertragslaufzeiten in Prozent\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(n)+")"
+	chart.x_title = "Anteile der Nennungen verschiedener Vertragslaufzeiten in Prozent (n="+str(n)+")"
 	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 M: {:.1f}%'.format(x))
 	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 M: {:.1f}%'.format(x))
 	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M: {:.1f}%'.format(x))
