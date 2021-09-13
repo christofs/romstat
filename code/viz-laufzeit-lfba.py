@@ -52,15 +52,14 @@ def viz(data,n):
 		legend_at_bottom_columns = 9,
 		legend_box_size=24)
 	chart.title = "Vertragslaufzeiten"
-	chart.x_title = "Anteile der Nennungen verschiedener Vertragslaufzeiten in Prozent (n="+str(n)+")"
-	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 M: {:.1f}%'.format(x))
-	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 M: {:.1f}%'.format(x))
-	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M: {:.1f}%'.format(x))
-	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '~36 M: {:.1f}%'.format(x))
-	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '~48 M: {:.1f}%'.format(x))
-	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 M: {:.1f}%'.format(x))
-	chart.add("~72", data["~72"]/n*100, formatter=lambda x: '~72 M: {:.1f}%'.format(x))
-	chart.add("78+", 0, formatter=lambda x: '78+ Monate {:.1f}%'.format(x))
+	chart.x_title = "Anteile der Vertragslaufzeiten in Prozent (n="+str(n)+")"
+	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 M.: {:.1f}%'.format(x))
+	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 M.: {:.1f}%'.format(x))
+	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M.: {:.1f}%'.format(x))
+	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '~36 M.: {:.1f}%'.format(x))
+	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '~48 M.: {:.1f}%'.format(x))
+	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 M.: {:.1f}%'.format(x))
+	chart.add("~66+", data["66+"]/n*100, formatter=lambda x: '66+ M.: {:.1f}%'.format(x))
 	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unb.: {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-lfba.svg")
 			
