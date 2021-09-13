@@ -51,15 +51,15 @@ def viz(data,n):
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 7,
 		legend_box_size=40)
-	chart.title = "Gehaltsstufen"
-	chart.x_title = "Anteile der Gehaltsstufen in Prozent (n="+str(n)+")"
-	chart.add("E11", data["E11"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E13", data["E13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A13", data["A13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E14", data["E14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A14", data["A14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E15", data["E15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A15", data["A15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
+	chart.title = "Eingruppierung"
+	chart.x_title = "Anteile der Gehaltsgruppen in Prozent (n="+str(n)+")"
+	chart.add("E11", data["E11"]/n*100, formatter=lambda x: 'E11: {:.1f}%'.format(x))
+	chart.add("E13", data["E13"]/n*100, formatter=lambda x: 'E13: {:.1f}%'.format(x))
+	chart.add("A13", data["A13"]/n*100, formatter=lambda x: 'A13: {:.1f}%'.format(x))
+	chart.add("E14", data["E14"]/n*100, formatter=lambda x: 'E14: {:.1f}%'.format(x))
+	chart.add("A14", data["A14"]/n*100, formatter=lambda x: 'A14: {:.1f}%'.format(x))
+	chart.add("E15", data["E15"]/n*100, formatter=lambda x: 'E15: {:.1f}%'.format(x))
+	chart.add("A15", data["A15"]/n*100, formatter=lambda x: 'A15: {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_eingruppierung.svg")
 			
 			
