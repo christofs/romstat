@@ -33,6 +33,28 @@ Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt si
 ![](img/romanistik_stellentyp.svg)
 
 
+## Vertragslaufzeiten für einzelne Stellentypen 
+
+Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8% und die Stellentypen, für die ein entfristetes Stellenangebot üblich ist, sind begrenzt (vor allem: LfbA, Lektorat, Rat). Aber werden solche Stellentypen auch tatsächlich mehrheitlich unbefristet ausgeschrieben? 
+
+### Vertragslaufzeiten bei Lektoratsstellen
+
+![](img/romanistik_laufzeit-lektorat.svg)
+
+Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
+
+### Vertragslaufzeiten bei LfbA-Stellen
+
+![](img/romanistik_laufzeit-lfba.svg)
+
+### Vertragslaufzeiten bei Ratsstellen
+
+![](img/romanistik_laufzeit-rat.svg)
+
+
+
+
+
 ## Stellenumfang
 
 ![](img/romanistik_stellenumfang.svg)
