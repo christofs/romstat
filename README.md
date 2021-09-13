@@ -4,7 +4,7 @@ Im Kontext der Debatten um das Wissenschafts-Zeitvertrags-Gesetz (WissZeitVG), d
 
 
 
-## Datengrundlage
+## (1) Datengrundlage
 
 Die Datengrundlage der folgenden Analysen sind alle Stellenausschreibungen für wissenschaftliche Mitarbeiter:innen, die in der Zeit von März 2014 bis Juli 2021 auf der Plattform romanistik.de publiziert wurden. Ausschreibungen von Professuren, auch von Juniorprofessuren, sind nicht enthalten, ebenso wie Ausschreibungen für nichtwissenschaftliche Stellen (eine Ergänzung der Daten durch diese Stellenkategorien wäre aber natürlich denkbar). Alle Daten wurden im Juli 2021 erhoben. 
 
@@ -15,7 +15,7 @@ Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschre
 Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. 
 
 
-## Vertragslaufzeiten 
+## (2) Vertragslaufzeiten 
 
 Zunächst ein Blick auf die Laufzeiten der ausgeschriebenen Stellen über den gesamten Untersuchungszeitraum. 
 
@@ -28,62 +28,62 @@ Es wird ersichtlich, dass eine deutliche Mehrheit (63.2%) der Stellenanzeigen ei
 Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt sich sicherlich in großen Teilen durch entsprechende Laufzeiten bspw. von Doktorand:innenstellen in Graduiertenkollegs oder typischen Projektlaufzeiten bei DFG-geförderten Drittmittelvorhaben. Der hohe Anteil von Ausschreibungen mit einer Laufzeit von nur 2 Jahren erklärt sich daraus jedoch nicht. Bei der Einordnung der Zahlen zu den unbefristeten Stellen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen erfasst wurden, nicht der Anteil der aktuell aktiven Wissenschaftler:innen in der Romanistik, die unbefristete Stellen innehaben. 
 
 
-## Stellentypen 
+## (3) Stellentypen 
 
 ![](img/romanistik_stellentyp.svg)
 
 
-## Vertragslaufzeiten für einzelne Stellentypen 
-
-Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8% und die Stellentypen, für die ein entfristetes Stellenangebot üblich ist, sind begrenzt (vor allem: LfbA, Lektorat, Rat). Aber werden solche Stellentypen auch tatsächlich mehrheitlich unbefristet ausgeschrieben? 
-
-
-### Vertragslaufzeiten bei Lektoratsstellen
-
-![](img/romanistik_laufzeit-lektorat.svg)
-
-Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
-
-
-### Vertragslaufzeiten bei LfbA-Stellen
-
-![](img/romanistik_laufzeit-lfba.svg)
-
-Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
-
-### Vertragslaufzeiten bei Ratsstellen
-
-![](img/romanistik_laufzeit-rat.svg)
-
-Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
-
-### Vertragslaufzeiten bei WMA-Stellen
-
-![](img/romanistik_laufzeit-wma.svg)
-
-Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
-
-
-## Stellenumfang
+## (4) Stellenumfang
 
 ![](img/romanistik_stellenumfang.svg)
 
 Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen gliedern: Die größte Gruppe sind Stellen mit der Hälfte der regulären Arbeitszeit (38.9%); ein Drittel der Stellen sind solche mit vollem Stellenumfang (33.5%); die übrigen Stellen machen gemeinsam die kleinste Gruppe aus (vor allem 65%-Stellen, aber gelegentlich auch 75%-Stellen, zusammengenommen 27.6%). 
 
 
-## Lehrverpflichtung
+## (5) Umfang der Lehrverpflichtung
 
 (Eine Analyse zum Umfang der Lehrverpflichtung folgt noch.) 
 
 
-## Eingruppierung
+## (6) Eingruppierung
 
 ![](img/romanistik_eingruppierung.svg)
 
 Wenig überraschend ist, dass die Gehaltsgruppe E13 die ausgeschriebenen Stellen klar dominiert (92.7%). Nur selten sind Stellen höher, nur ganz vereinzelt niedriger dotiert. Angesichts der Tatsache, dass die Auswertung sich auf wissenschaftliche Stellen fokussiert, waren Einstufungen unter E13 nicht zu erwarten. 
 
 
-## Unbefristete Stellentypen
+## (7) Vertragslaufzeiten und Stellentypen 
+
+Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8% und die Stellentypen, für die ein entfristetes Stellenangebot üblich ist, sind begrenzt (vor allem: LfbA, Lektorat, Rat). Aber werden solche Stellentypen auch tatsächlich mehrheitlich unbefristet ausgeschrieben? 
+
+
+### (7.1) Vertragslaufzeiten bei Lektoratsstellen
+
+![](img/romanistik_laufzeit-lektorat.svg)
+
+Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
+
+
+### (7.2) Vertragslaufzeiten bei LfbA-Stellen
+
+![](img/romanistik_laufzeit-lfba.svg)
+
+Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
+
+### (7.3) Vertragslaufzeiten bei Ratsstellen
+
+![](img/romanistik_laufzeit-rat.svg)
+
+Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
+
+### (7.4) Vertragslaufzeiten bei WMA-Stellen
+
+![](img/romanistik_laufzeit-wma.svg)
+
+Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
+
+
+### (7.5) Unbefristete Stellentypen
 
 Für den Anteil der unbefristet ausgeschrieben Stellen (siehe oben) ist von Interesse, welchen Stellenkategorien diese angehören. 
 
@@ -92,7 +92,7 @@ Für den Anteil der unbefristet ausgeschrieben Stellen (siehe oben) ist von Inte
 Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben Stellen den Kategorien 'Lehrkraft für besondere Aufgaben' (28.7%) oder 'Lektorat' (25.3%) angehören. Beide Stellenkategorien zeichnen sich in der Regel durch hohe Lehrdeputate aus. Auch die Ratsstellen (Studienrat/Studienrätin oder Akademische/r Rat oder Rätin) haben einen signifikanten Anteil (19.5%), ebenso wie die nicht weiter bestimmten Stellen als Wissenschaftliche/r Mitarbeiter/in (17.5%). Die übrigen Stellen betreffen verschiedene Stellenkategorien, beispielsweise Leitungsfunktionen in Sprachenzentren oder Verlagen.   
 
 
-## Vertragslaufzeiten pro Jahr
+## (8) Vertragslaufzeiten pro Jahr
 
 ![](img/romanistik_jahr-dauer_barchart.svg)
 
