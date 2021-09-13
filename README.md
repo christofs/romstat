@@ -57,6 +57,11 @@ Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbe
 
 Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
 
+### Vertragslaufzeiten bei WMA-Stellen
+
+![](img/romanistik_laufzeit-wma.svg)
+
+Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
 
 
 ## Stellenumfang
