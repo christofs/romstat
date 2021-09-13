@@ -32,6 +32,13 @@ Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt si
 
 ![](img/romanistik_stellentyp.svg)
 
+## Vertragslaufzeiten für einzelne Stellentypen 
+
+### Vertragslaufzeiten bei Lektoratsstellen
+
+![](img/romanistik_laufzeit-lektorat.svg)
+
+
 
 ## Stellenumfang
 
