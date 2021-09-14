@@ -20,31 +20,16 @@ def get_data():
 
 
 
-def viz_dauer(data): 
+def prepare(data): 
 	# Filter down to useable data
 	dauerdata = data.loc[:,["jahr", "dauer_norm", "include"]]
 	dauerdata = dauerdata[dauerdata["dauer_norm"].apply(lambda x: str(x).isdigit())]
 	dauerdata = dauerdata[dauerdata["jahr"].apply(lambda x: str(x).isdigit())]
 	dauerdata = dauerdata[dauerdata["include"] == 1]
 	#print(dauerdata.head())
-	datenpunktesumme = dauerdata.shape[0]
-	print("Anzahl der Datenpunkte", datenpunktesumme)
+	n = dauerdata.shape[0]
+	print("Anzahl der Datenpunkte", n)
 	dauerdata = dauerdata.groupby("jahr")
-	
-	# Make boxplot (distribution)
-	boxplot = pygal.Box(box_mode="tukey", 
-					    style=CleanStyle,
-					    legend_at_bottom = True,
-					    legend_at_bottom_columns = 8,
-					    truncate_legend=5)
-	boxplot.title = "Vertragsdauer pro Jahr\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(datenpunktesumme)+")"
-	boxplot.x_title = "Jahre"
-	boxplot.y_title = "Vertragsdauer in Monaten\n(120=unbefristet)"
-	for year,group in dauerdata:
-		dauerdatayear = list(group["dauer_norm"].astype(int)) 
-		label = str(year) + " (" + str(len(dauerdatayear)) + " Stellen)"
-		boxplot.add(label, dauerdatayear)
-	boxplot.render_to_file("romanistik_jahr-dauer_boxplot.svg")
 	
 	# Prepare data for stacked barchart
 	yearlypercentages = {}
@@ -96,7 +81,10 @@ def viz_dauer(data):
 	yearlypercentages.set_index("cats", inplace=True)
 	yearlypercentages = yearlypercentages.T
 	#print(yearlypercentages)
+	data = yearlypercentages
+	return data, n
 
+def make_viz(data, n): 
 	# Make stacked barchart (proportions)
 	barchart = pygal.StackedBar(style=BlueStyle,
     				     legend_at_bottom = False,
@@ -119,7 +107,8 @@ def viz_dauer(data):
 
 def main(): 
 	data = get_data()
-	viz_dauer(data)
+	data,n = prepare(data)
+	make_viz(data,n)
 	
 
 main()	
