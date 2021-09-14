@@ -1,7 +1,6 @@
-# Einige statistische Beobachtungen zur Stellensituation in der deutschen Romanistik
+# Zur Stellensituation des Mittelbaus in der deutschen Romanistik: eine Analyse der Ausschreibungen auf romanistik.de in der Zeit von 2014 bis 2021
 
 Im Kontext der Debatten um das Wissenschafts-Zeitvertrags-Gesetz (WissZeitVG), die unter anderem in den sozialen Medien unter dem Hashtag [#IchBinHanna](https://twitter.com/search?q=%23ichbinhannah&src=typed_query&f=live) geführt wurden und werden, erscheint eine Analyse der aktuellen Stellensituation in der deutschen Romanistik von Relevanz. Die vorliegende Darstellung möchte hierzu einen Beitrag leisten. 
-
 
 
 ## (1) Datengrundlage
@@ -12,7 +11,7 @@ Insgesamt wurden 1107 Stellenanzeigen identifiziert, von denen 794 für die Ausw
 
 Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschreibungen in bestimmten Fällen, beispielsweise wenn Stellen für Promovierende in Graduiertenkollegs ausgeschrieben werden, nicht nur auf eine, sondern mehrere gleichartige Stellen beziehen. Da solche Ausschreibungen meist nicht ausschließlich romanistische Profile haben, wurden diese Stellen aufgenommen, aber nur einmalig gezählt. 
 
-Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. 
+Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. Eine weitere Aufbereitung wird u.U. noch genauere Informationen liefern können. 
 
 
 ## (2) Vertragslaufzeiten 
