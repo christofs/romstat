@@ -35,7 +35,7 @@ Bezüglich der Stellentypen ist insbesondere von Interesse, welche Stellentypen 
 
 ![](img/romanistik_stellentyp.svg)
 
-Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%). Nur kleinere Anteile bestehen für Ratsstellen und Fellowships. 
+Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%). Nur kleinere Anteile bestehen für Ratsstellen und Fellowships. (Zu beachten ist, dass die Ausdifferenzierung der verschiedenen Typen von WMA-Stellen im Datensatz noch nicht abgeschlossen ist und sich daher hier noch Verschiebungen ergeben können.) 
 
 
 ## (4) Stellenumfang
