@@ -32,16 +32,20 @@ Bei der Einordnung der Zahlen zu den unbefristeten Stellen sollte bedacht werden
 
 ## (3) Stellentypen 
 
+Bezüglich der Stellentypen ist insbesondere von Interesse, welche Stellentypen außer den klassischen Stellen als Wissenschaftliche/r Mitarbeitende/r in der Romanistik signifikant vertreten sind. 
+
 ![](img/romanistik_stellentyp.svg)
 
-Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%).  
+Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%). Nur kleinere Anteile bestehen für Ratsstellen und Fellowships. 
 
 
 ## (4) Stellenumfang
 
+Wie verhalten sich die Teilzeit- und Vollzeitstellen zueinander?
+
 ![](img/romanistik_stellenumfang.svg)
 
-Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen gliedern: Die größte Gruppe sind Stellen mit der Hälfte der regulären Arbeitszeit (38.9%); ein Drittel der Stellen sind solche mit vollem Stellenumfang (33.5%); die übrigen Stellen machen gemeinsam die kleinste Gruppe aus (vor allem 65%-Stellen, aber gelegentlich auch 75%-Stellen, zusammengenommen 27.6%). 
+Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen gliedern: Die größte Gruppe sind Stellen mit der Hälfte der regulären Arbeitszeit (38.9%); ein Drittel der Stellen sind solche mit vollem Stellenumfang (33.5%); die übrigen Stellen machen gemeinsam die kleinste Gruppe aus (vor allem 65%-Stellen, aber gelegentlich auch Stellen mit noch etwas höherem Umfang, zusammengenommen 27.6%). 
 
 
 ## (5) Umfang der Lehrverpflichtung
@@ -50,6 +54,8 @@ Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen glieder
 
 
 ## (6) Eingruppierung
+
+Welche Rolle spielen Eingruppierungen jenseits der Gruppe E13 TV-L?
 
 ![](img/romanistik_eingruppierung.svg)
 
@@ -63,13 +69,15 @@ Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 
 
 ### (7.1) Unbefristete Stellentypen
 
+Wie verteilen sich die unbefristeten Stellen über die Stellentypen? 
+
 ![](img/romanistik_unbefristete-stellentypen.svg)
 
-Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben Stellen den Kategorien 'Lehrkraft für besondere Aufgaben' (28.7%) oder 'Lektorat' (25.3%) angehören. Beide Stellenkategorien zeichnen sich in der Regel durch hohe Lehrdeputate aus. Auch die Ratsstellen (Studienrat/Studienrätin oder Akademische/r Rat oder Rätin) haben einen signifikanten Anteil (19.5%), ebenso wie die nicht weiter bestimmten Stellen als Wissenschaftliche/r Mitarbeiter/in (17.5%). Die übrigen Stellen betreffen verschiedene Stellenkategorien, beispielsweise Leitungsfunktionen in Sprachenzentren oder Verlagen.   
-
-In der umgekehrten Perspektive können die Vertragslaufzeiten auch in Abhängigkeit der Stellentypen aufgeschlüsselt werden, was hier folgt.  
+Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben Stellen den Kategorien 'Lehrkraft für besondere Aufgaben' (28.7%) oder 'Lektorat' (25.3%) angehören. Beide Stellenkategorien zeichnen sich in der Regel durch hohe Lehrdeputate aus. Auch die Ratsstellen (Studienrat/Studienrätin oder Akademische/r Rat oder Rätin) haben einen signifikanten Anteil (19.5%), ebenso wie die nicht weiter bestimmten Stellen als Wissenschaftliche/r Mitarbeiter/in (17.5%). Die übrigen Stellen betreffen verschiedene Stellenkategorien, beispielsweise Leitungsfunktionen in Sprachenzentren oder Verlagen. 
 
 ### (7.2) Vertragslaufzeiten bei Lektoratsstellen
+
+In der umgekehrten Perspektive können die Vertragslaufzeiten auch in Abhängigkeit der Stellentypen aufgeschlüsselt werden. 
 
 ![](img/romanistik_laufzeit-lektorat.svg)
 
@@ -87,7 +95,7 @@ Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbe
 
 ![](img/romanistik_laufzeit-rat.svg)
 
-Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
+Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt.  
 
 
 ### (7.5) Vertragslaufzeiten bei WMA-Stellen
