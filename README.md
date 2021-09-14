@@ -50,8 +50,13 @@ Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen glieder
 
 ## (5) Umfang der Lehrverpflichtung
 
-(Eine Analyse zum Umfang der Lehrverpflichtung folgt noch.) 
+Wie verhält es sich beim Umfang der Lehrverpflichtung (in SWS)?
+ 
+![](img/romanistik_sws-voll.svg) 
 
+Man beachte, dass der hier angegebene Umfang der SWS für jede Stelle auf das entsprechende Vollzeit-Äquivalent umgerechnet wurde (mit Rundung auf volle SWS). Ist eine 50%-Stelle mit 4 SWS ausgeschrieben, würde sie hier als eine Stelle mit einer normalisierten Lehrverpflichtung von 8 SWS berücksichtigt. Man beachte außerdem, das nur für einen vergleichsweise kleinen Teil der Stellenausschreibungen eine Angabe zur Lehrverpflichtung in den Daten identifiziert werden konnte. 
+
+Das häufigste Lehrverpflichtungs-Äquivalent sind demnach 4 SWS (etwa ein Drittel der Ausschreibungen). Dies wird allerdings dicht gefolgt von 16 SWS (etwa ein Viertel der Ausschreibungen), 18 SWS (immerhin rund 12% der Ausschreibungen) sowie 12 SWS (rund 10% der Ausschreibungen). Andere Lehrverpflichtungen machen nur kleine Anteil der Ausschreibungen aus. In Einzelfällen kommt es aber vor, dass eine Stelle mit einem Lehrverpflichtungs-Äquivalent von bis zu 24 SWS ausgeschrieben wird.  
 
 ## (6) Eingruppierung
 
