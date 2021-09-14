@@ -99,7 +99,7 @@ Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbe
 
 ![](img/romanistik_laufzeit-rat.svg)
 
-Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt.  
+Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt. (Man beachte die kleine Gesamtanzahl von Ratsstellen, die die Aussagekraft der exakten Zahlen etwas einschränkt.) 
 
 
 ### (7.5) Vertragslaufzeiten bei WMA-Stellen
