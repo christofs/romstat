@@ -51,7 +51,7 @@ def viz(data,n):
 		legend_at_bottom_columns = 8,
 		legend_box_size=32)
 	chart.title = "Stellentypen"
-	chart.x_title = "Anteile der Stellentypen in Prozent\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(n)+")"
+	chart.x_title = "Anteile der Stellentypen in Prozent (n="+str(n)+")"
 	chart.add("LfbA", data["LfbA"]/n*100, formatter=lambda x: 'LfbA {:.1f}%'.format(x))
 	chart.add("Lektorat", data["Lektorat"]/n*100, formatter=lambda x: 'Lektorat {:.1f}%'.format(x))
 	chart.add("Ratsstelle", data["Ratsstelle"]/n*100, formatter=lambda x: 'Rat {:.1f}%'.format(x))
