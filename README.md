@@ -6,11 +6,11 @@ Im Kontext der Debatten um das Wissenschafts-Zeitvertrags-Gesetz (WissZeitVG), d
 
 ## (1) Datengrundlage
 
-Die Datengrundlage der folgenden Analysen sind alle Stellenausschreibungen für wissenschaftliche Mitarbeiter:innen, die in der Zeit von März 2014 bis Juli 2021 auf der Plattform romanistik.de publiziert wurden. Ausschreibungen von Professuren, auch von Juniorprofessuren, sind nicht enthalten, ebenso wie Ausschreibungen für nichtwissenschaftliche Stellen (eine Ergänzung der Daten durch diese Stellenkategorien wäre aber natürlich denkbar). Alle Daten wurden im Juli 2021 erhoben. 
+Die Datengrundlage der folgenden Analysen sind alle Stellenausschreibungen, die in der Zeit von März 2014 bis Juli 2021 auf der [Plattform romanistik.de im Bereich 'Wissenschaftliche Stellen'](https://romanistik.de/aktuelles/stellen/wissenschaftliche-stellen) publiziert wurden. Ausschreibungen von Professuren, auch von Juniorprofessuren, sind nicht enthalten, ebenso wie Ausschreibungen für nichtwissenschaftliche Stellen (eine Ergänzung der Daten durch diese Stellenkategorien wäre aber denkbar). Alle Daten wurden Ende Juli 2021 erhoben. 
 
-Insgesamt wurden 1107 Stellenanzeigen identifiziert, von denen 799 für die Auswertung berücksichtigt werden konnten, bei einzelnen Analyse auch noch etwas weniger. Die übrigen Stellenanzeigen enthielten entweder unvollständige Angaben, oder bezogen sich auf Stellen, die nicht an einer deutschen Einrichtung ausgeschrieben waren, oder waren nicht im engeren Sinne Stellen, die sich spezifisch an romanistisch ausgebildete Bewerber:innen wenden. 
+Insgesamt wurden 1107 Stellenanzeigen identifiziert, von denen 799 für die Auswertung berücksichtigt werden konnten. Die übrigen Stellenanzeigen enthielten entweder unvollständige Angaben, oder bezogen sich auf Stellen, die nicht an einer deutschen Einrichtung ausgeschrieben waren, oder waren keine Stellen, die sich spezifisch an romanistisch ausgebildete Bewerber:innen wenden. 
 
-Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschreibungen in bestimmten Fällen, beispielsweise wenn Stellen für Promovierende in Graduiertenkollegs ausgeschrieben werden, nicht nur auf eine, sondern mehrere gleichartige Stellen beziehen. Da solche Ausschreibungen meist nicht ausschließlich romanistische Profile haben wurden diese Stellen hier nur einmalig gezählt. 
+Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschreibungen in bestimmten Fällen, beispielsweise wenn Stellen für Promovierende in Graduiertenkollegs ausgeschrieben werden, nicht nur auf eine, sondern mehrere gleichartige Stellen beziehen. Da solche Ausschreibungen meist nicht ausschließlich romanistische Profile haben, wurden diese Stellen aufgenommen, aber nur einmalig gezählt. 
 
 Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. 
 
@@ -23,14 +23,18 @@ Zunächst ein Blick auf die Laufzeiten der ausgeschriebenen Stellen über den ge
 
 Die Vertragslaufzeiten wurden gruppiert: Das bedeutet, dass beispielsweise die Kategorie "~24" nicht nur Stellen umfasst, die für exakt 24 Monate ausgeschrieben waren, sondern auch solche, die mindestens 18 und weniger als 30 Monate Vertragslaufzeit hatten.
 
-Es wird ersichtlich, dass eine deutliche Mehrheit (63.2%) der Stellenanzeigen eine Vertragslaufzeit von rund 36 Monaten (37.3%) oder rund 24 Monaten (25.5%) vorsehen. Andere Laufzeiten liegen teils knapp, teils deutlich unter 10%. Der Anteil der unbefristet ausgeschrieben Stellen liegt bei 10.8%. 
+Es wird ersichtlich, dass eine deutliche Mehrheit (63.2%) der Stellenanzeigen eine Vertragslaufzeit von rund 36 Monaten (37.3%) oder rund 24 Monaten (25.5%) vorsehen. Andere Laufzeiten liegen teils knapp, teils deutlich unter 10%. Der Anteil der unbefristet ausgeschrieben Stellen liegt bei 11.1%. 
 
-Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt sich sicherlich in großen Teilen durch entsprechende Laufzeiten bspw. von Doktorand:innenstellen in Graduiertenkollegs oder typischen Projektlaufzeiten bei DFG-geförderten Drittmittelvorhaben. Der hohe Anteil von Ausschreibungen mit einer Laufzeit von nur 2 Jahren erklärt sich daraus jedoch nicht. Bei der Einordnung der Zahlen zu den unbefristeten Stellen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen erfasst wurden, nicht der Anteil der aktuell aktiven Wissenschaftler:innen in der Romanistik, die unbefristete Stellen innehaben. 
+Dass die Ausschreibungen mit einer Laufzeit von 3 Jahren dominieren, erklärt sich sicherlich in großen Teilen durch entsprechende Laufzeiten bspw. von Doktorand:innenstellen in Graduiertenkollegs oder typischen Projektlaufzeiten bei DFG-geförderten Drittmittelvorhaben. Der hohe Anteil von Ausschreibungen mit einer Laufzeit von nur 2 Jahren erklärt sich daraus jedoch nicht. 
+
+Bei der Einordnung der Zahlen zu den unbefristeten Stellen sollte bedacht werden, dass hier die Anteile der ausgeschrieben Stellen erfasst wurden, nicht der Anteil der aktuell aktiven Wissenschaftler:innen in der Romanistik, die unbefristete Stellen innehaben. 
 
 
 ## (3) Stellentypen 
 
 ![](img/romanistik_stellentyp.svg)
+
+Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%).  
 
 
 ## (4) Stellenumfang
@@ -49,21 +53,21 @@ Der Stellenumfang der ausgeschrieben Stellen lässt sich in drei Gruppen glieder
 
 ![](img/romanistik_eingruppierung.svg)
 
-Wenig überraschend ist, dass die Gehaltsgruppe E13 die ausgeschriebenen Stellen klar dominiert (92.7%). Nur selten sind Stellen höher, nur ganz vereinzelt niedriger dotiert. Angesichts der Tatsache, dass die Auswertung sich auf wissenschaftliche Stellen fokussiert, waren Einstufungen unter E13 nicht zu erwarten. 
+Wenig überraschend ist, dass die Gehaltsgruppe E13 nach TV-L oder äquivalent die ausgeschriebenen Stellen klar dominiert (92.7%). Nur selten sind Stellen höher, nur ganz vereinzelt niedriger dotiert. Angesichts der Tatsache, dass die Auswertung sich auf wissenschaftliche Stellen fokussiert, waren Einstufungen unter E13 nicht zu erwarten. 
 
 
 ## (7) Vertragslaufzeiten und Stellentypen 
 
-Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 10.8%. Es ist daher von Interesse, wie sich die unbefristeten Stellen in die Stellentypen aufgliedern und wie verbreitet unbefristete Ausschreibungen für verschiedene Stellentypen sind. 
+Der Anteil der Ausschreibungen mit unbefristeter Vertragslaufzeit liegt nur bei 11.1% (siehe oben). Es ist daher von Interesse, wie sich die unbefristeten Stellen in die Stellentypen aufgliedern und wie verbreitet unbefristete Ausschreibungen für verschiedene Stellentypen sind. 
+
 
 ### (7.1) Unbefristete Stellentypen
-
-Für den Anteil der unbefristet ausgeschrieben Stellen (siehe oben) ist von Interesse, welchen Stellenkategorien diese angehören. 
 
 ![](img/romanistik_unbefristete-stellentypen.svg)
 
 Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben Stellen den Kategorien 'Lehrkraft für besondere Aufgaben' (28.7%) oder 'Lektorat' (25.3%) angehören. Beide Stellenkategorien zeichnen sich in der Regel durch hohe Lehrdeputate aus. Auch die Ratsstellen (Studienrat/Studienrätin oder Akademische/r Rat oder Rätin) haben einen signifikanten Anteil (19.5%), ebenso wie die nicht weiter bestimmten Stellen als Wissenschaftliche/r Mitarbeiter/in (17.5%). Die übrigen Stellen betreffen verschiedene Stellenkategorien, beispielsweise Leitungsfunktionen in Sprachenzentren oder Verlagen.   
 
+In der umgekehrten Perspektive können die Vertragslaufzeiten auch in Abhängigkeit der Stellentypen aufgeschlüsselt werden, was hier folgt.  
 
 ### (7.2) Vertragslaufzeiten bei Lektoratsstellen
 
@@ -78,11 +82,13 @@ Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbef
 
 Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
 
+
 ### (7.4) Vertragslaufzeiten bei Ratsstellen
 
 ![](img/romanistik_laufzeit-rat.svg)
 
 Nur Ratsstellen werden ganz überwiegend unbefristet ausgeschrieben. 
+
 
 ### (7.5) Vertragslaufzeiten bei WMA-Stellen
 
