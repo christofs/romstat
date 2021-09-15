@@ -28,8 +28,9 @@ def get_data():
 def prepare_data(data, params, i): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", params["domains"][i], "dauer_cat"]]
+	data = data.loc[:,["include", params["domains"][i], "dauer_cat", "domain_count"]]
 	data = data[data["include"] == 1]
+	data = data[data["domain_count"] > 0]
 	data = data[data[params["domains"][i]] == 1]
 	#print(data.head())
 	n = data.shape[0]
