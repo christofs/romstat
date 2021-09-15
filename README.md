@@ -109,11 +109,57 @@ Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschriebe
 Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
 
 
-## (8) Vertragslaufzeiten pro Jahr
+## (8) Vertragslaufzeiten nach Fachgebieten
+
+Mit Blick auf die Ausdifferenzierung der Romanistik nach Fachgebieten stellt sich die Frage, ob es hier signifikante Unterschiede in der Ausschreibungspraxis gibt. 
+
+Die hier unterschiedenen Fachgebiete ergeben sich aus der auf der Plattform romanistik.de genutzten Kategorisierung. Da sich viele Ausschreibungen auf mehr als ein Fachgebiet beziehen, kann hier eine Ausschreibung in mehreren Fachgebieten gezählt werden.  
+
+### (8.1) Vertragslaufzeiten bei Literaturwissenschaft
+
+![](img/romanistik_laufzeit-litw.svg)
+
+In der Literaturwissenschaft dominiert die Laufzeit von rund 3 Jahren (48%), mit deutlichem Abstand zur Laufzeit von rund 2 Jahren (22.6). Unbefristet ausgeschrieben wird ein sehr kleiner Anteil der Stellen (3.3%). 
+
+
+### (8.1) Vertragslaufzeiten bei Sprachwissenschaft
+
+![](img/romanistik_laufzeit-sprachw.svg)
+
+In der Sprachwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (39.2%), allerdings weniger deutlich als in der Literaturwissenschaft und dichter gefolgt von den Laufzeiten von rund 2 Jahren (26.8%). Unbefristet ausgeschrieben wird ebenfalls ein sehr kleiner Anteil der Stellen (3.3%). 
+
+
+### (8.1) Vertragslaufzeiten bei Medien- und Kulturwissenschaft
+
+![](img/romanistik_laufzeit-mkw.svg)
+
+In der Medien- und Kulturwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (40.8%), ähnlich wie in der Sprachwissenschaft und ebenfalls dichter gefolgt von den Laufzeiten von rund 2 Jahren (28%). Unbefristet ausgeschrieben wird ebenfalls ein etwas größerer Anteil der Stellen als in Sprach- und Literaturwissenschaft (8.1%).
+
+
+### (8.1) Vertragslaufzeiten bei Fachdidaktik
+
+![](img/romanistik_laufzeit-fdid.svg)
+
+In der Fachdidaktik dominiert ebenfalls die Laufzeit von rund 3 Jahren (43%), mit etwas Abstand gefolgt von der Laufzeit von rund 2 Jahren (23.1%). Unbefristet ausgeschrieben werden immerhin 11.9% der Stellen. 
+
+
+### (8.1) Vertragslaufzeiten in den weiteren Bereichen
+
+Die Kategorie "Weitere Bereiche" ist eine Sammelkategorie von romanistik.de. 
+
+![](img/romanistik_laufzeit-andere.svg)
+
+In der Kategorie 'Weitere Bereiche' überwiegt, und das gibt es nur hier, die Laufzeit von rund 2 Jahren (39.2%) über die Laufzeit von rund 3 Jahren (32.4%). Unbefristet ausgeschrieben wird hier ein kleiner Anteil der Stellen (6.8%). 
+
+
+
+## (9) Entwicklung der Vertragslaufzeiten über die Zeit
 
 ![](img/romanistik_jahr-dauer_barchart.svg)
 
-Die Darstellung zeigt die Anteile (in Prozent) der verschiedenen Vertragslaufzeiten in jedem der untersuchten Jahre (2014-2021). Die Vertragslaufzeiten wurden auch hier nach dem gleichen Schema wie in der obigen Analyse gruppiert. Es zeigt sich, dass die Verhältnisse über die Jahre insgesamt relativ stabil sind, ohne klare Trends zu Anstieg oder Absinken bestimmter Vertragslaufzeiten. 
+Die Darstellung zeigt die Anteile (in Prozent) der verschiedenen Vertragslaufzeiten in jedem der untersuchten Jahre (2014-2021). Die Vertragslaufzeiten wurden auch hier nach dem gleichen Schema wie in der obigen Analyse gruppiert. 
+
+Es zeigt sich, dass die Verhältnisse über die Jahre insgesamt relativ stabil sind, ohne klare Trends zu Anstieg oder Absinken bestimmter Vertragslaufzeiten. 
 
 
 
