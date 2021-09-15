@@ -1,7 +1,6 @@
-# Einige statistische Beobachtungen zur Stellensituation in der deutschen Romanistik
+# Zur Stellensituation des Mittelbaus in der deutschen Romanistik: eine Analyse der Ausschreibungen auf romanistik.de in der Zeit von 2014 bis 2021
 
 Im Kontext der Debatten um das Wissenschafts-Zeitvertrags-Gesetz (WissZeitVG), die unter anderem in den sozialen Medien unter dem Hashtag [#IchBinHanna](https://twitter.com/search?q=%23ichbinhannah&src=typed_query&f=live) geführt wurden und werden, erscheint eine Analyse der aktuellen Stellensituation in der deutschen Romanistik von Relevanz. Die vorliegende Darstellung möchte hierzu einen Beitrag leisten. 
-
 
 
 ## (1) Datengrundlage
@@ -12,7 +11,7 @@ Insgesamt wurden 1107 Stellenanzeigen identifiziert, von denen 794 für die Ausw
 
 Eine Einschränkung bei der Genauigkeit der Daten ist, dass sich Stellenausschreibungen in bestimmten Fällen, beispielsweise wenn Stellen für Promovierende in Graduiertenkollegs ausgeschrieben werden, nicht nur auf eine, sondern mehrere gleichartige Stellen beziehen. Da solche Ausschreibungen meist nicht ausschließlich romanistische Profile haben, wurden diese Stellen aufgenommen, aber nur einmalig gezählt. 
 
-Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. 
+Die dem derzeitigen Stand zugrunde liegenden Daten wurden am 9. September 2021 aufbereitet. Sie sind im Ordner [data](https://github.com/christofs/romstat/tree/main/data) in diesem Repository verfügbar. Eine weitere Aufbereitung wird u.U. noch genauere Informationen liefern können. 
 
 
 ## (2) Vertragslaufzeiten 
@@ -36,7 +35,7 @@ Bezüglich der Stellentypen ist insbesondere von Interesse, welche Stellentypen 
 
 ![](img/romanistik_stellentyp.svg)
 
-Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%). Nur kleinere Anteile bestehen für Ratsstellen und Fellowships. 
+Wenig überraschend ist, dass der Stellentyp der/des "Wissenschaftlichen Mitarbeiters/in" die Ausschreibungen klar dominiert (über alle Typen der WMA hinweg fast 70%). Aber auch die Lektoratsstellen und die Lehrkräfte für besondere Aufgaben sind signifikant vertreten (gemeinsam rund 20%). Nur kleinere Anteile bestehen für Ratsstellen und Fellowships. (Zu beachten ist, dass die Ausdifferenzierung der verschiedenen Typen von WMA-Stellen im Datensatz noch nicht abgeschlossen ist und sich daher hier noch Verschiebungen ergeben können.) 
 
 
 ## (4) Stellenumfang
@@ -56,7 +55,7 @@ Wie verhält es sich beim Umfang der Lehrverpflichtung (in SWS)?
 
 Man beachte, dass der hier angegebene Umfang der SWS für jede Stelle auf das entsprechende Vollzeit-Äquivalent umgerechnet wurde (mit Rundung auf volle SWS). Ist eine 50%-Stelle mit 4 SWS ausgeschrieben, würde sie hier als eine Stelle mit einer normalisierten Lehrverpflichtung von 8 SWS berücksichtigt. Man beachte außerdem, das nur für einen vergleichsweise kleinen Teil der Stellenausschreibungen eine Angabe zur Lehrverpflichtung in den Daten identifiziert werden konnte. 
 
-Das häufigste Lehrverpflichtungs-Äquivalent sind demnach 4 SWS (etwa ein Drittel der Ausschreibungen). Dies wird allerdings dicht gefolgt von 16 SWS (etwa ein Viertel der Ausschreibungen), 18 SWS (immerhin rund 12% der Ausschreibungen) sowie 12 SWS (rund 10% der Ausschreibungen). Andere Lehrverpflichtungen machen nur kleine Anteil der Ausschreibungen aus. In Einzelfällen kommt es aber vor, dass eine Stelle mit einem Lehrverpflichtungs-Äquivalent von bis zu 24 SWS ausgeschrieben wird.  
+Das häufigste Lehrverpflichtungs-Äquivalent sind demnach 4 SWS (etwa ein Drittel der Ausschreibungen). Dies wird allerdings dicht gefolgt von 16 SWS (etwa ein Viertel der Ausschreibungen), 18 SWS (immerhin rund 12% der Ausschreibungen) sowie 12 SWS (rund 10% der Ausschreibungen). Andere Lehrverpflichtungen machen nur kleine Anteil der Ausschreibungen aus. In Einzelfällen kommt es aber vor, dass Stellen mit einem Lehrverpflichtungs-Äquivalent von 20 bis 24 SWS ausgeschrieben werden. 
 
 ## (6) Eingruppierung
 
@@ -100,7 +99,7 @@ Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbe
 
 ![](img/romanistik_laufzeit-rat.svg)
 
-Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt.  
+Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt. (Man beachte die kleine Gesamtanzahl von Ratsstellen, die die Aussagekraft der exakten Zahlen etwas einschränkt.) 
 
 
 ### (7.5) Vertragslaufzeiten bei WMA-Stellen
