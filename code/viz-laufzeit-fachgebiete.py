@@ -75,6 +75,29 @@ def viz(data,n, params, i):
 	chart.add("66+", data["66+"]/n*100, formatter=lambda x: '66+ M.: {:.1f}%'.format(x))
 	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unbefristet {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-fachgebiete-" + params["plotnames"][i] +".svg")
+
+
+def viz2(data,n, params, i): 
+	dark_lighten_style = LightenStyle('#004466',
+		step=10, 
+		font_family="FreeSans",
+		label_font_size = 12,
+		major_label_font_size = 12,
+		value_label_font_size = 12,
+		value_font_size = 12,
+		title_font_size = 16)
+	chart = pygal.HorizontalBar(
+		style=dark_lighten_style,
+		print_values = True,
+		show_legend = False,
+    	legend_at_bottom = False,
+		legend_at_bottom_columns = 8,
+		legend_box_size=32,
+		range = (0,50))
+	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M.: {:.1f}%'.format(x))
+	chart.title = "Vertragslaufzeiten nach Fachgebieten"
+	chart.x_title = "Vertragslaufzeiten in Prozent (n="+str(n)+")"
+	chart.render_to_file("../img/romanistik_laufzeit-fachgebiete-synopse.svg")
 			
 			
 
@@ -84,6 +107,7 @@ def main(params):
 		data = get_data()
 		data,n = prepare_data(data, params, i)
 		viz(data,n, params, i)
+		viz2(data,n, params, i)
 	
 
 main(params)	
