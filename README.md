@@ -117,28 +117,28 @@ Die hier unterschiedenen Fachgebiete ergeben sich aus der auf der Plattform roma
 
 ### (8.1) Vertragslaufzeiten bei Literaturwissenschaft
 
-![](img/romanistik_laufzeit-litw.svg)
+![](img/romanistik_laufzeit-fachgebiet-litw.svg)
 
 In der Literaturwissenschaft dominiert die Laufzeit von rund 3 Jahren (48%), mit deutlichem Abstand zur Laufzeit von rund 2 Jahren (22.6). Unbefristet ausgeschrieben wird ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
 ### (8.1) Vertragslaufzeiten bei Sprachwissenschaft
 
-![](img/romanistik_laufzeit-sprachw.svg)
+![](img/romanistik_laufzeit-fachgebiet-sprachw.svg)
 
 In der Sprachwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (39.2%), allerdings weniger deutlich als in der Literaturwissenschaft und dichter gefolgt von den Laufzeiten von rund 2 Jahren (26.8%). Unbefristet ausgeschrieben wird ebenfalls ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
 ### (8.1) Vertragslaufzeiten bei Medien- und Kulturwissenschaft
 
-![](img/romanistik_laufzeit-mkw.svg)
+![](img/romanistik_laufzeit-fachgebiet-mkw.svg)
 
 In der Medien- und Kulturwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (40.8%), ähnlich wie in der Sprachwissenschaft und ebenfalls dichter gefolgt von den Laufzeiten von rund 2 Jahren (28%). Unbefristet ausgeschrieben wird ebenfalls ein etwas größerer Anteil der Stellen als in Sprach- und Literaturwissenschaft (8.1%).
 
 
 ### (8.1) Vertragslaufzeiten bei Fachdidaktik
 
-![](img/romanistik_laufzeit-fdid.svg)
+![](img/romanistik_laufzeit-fachgebiet-fdid.svg)
 
 In der Fachdidaktik dominiert ebenfalls die Laufzeit von rund 3 Jahren (43%), mit etwas Abstand gefolgt von der Laufzeit von rund 2 Jahren (23.1%). Unbefristet ausgeschrieben werden immerhin 11.9% der Stellen. 
 
@@ -147,7 +147,7 @@ In der Fachdidaktik dominiert ebenfalls die Laufzeit von rund 3 Jahren (43%), mi
 
 Die Kategorie "Weitere Bereiche" ist eine Sammelkategorie von romanistik.de. 
 
-![](img/romanistik_laufzeit-andere.svg)
+![](img/romanistik_laufzeit-fachgebiet-andere.svg)
 
 In der Kategorie 'Weitere Bereiche' überwiegt, und das gibt es nur hier, die Laufzeit von rund 2 Jahren (39.2%) über die Laufzeit von rund 3 Jahren (32.4%). Unbefristet ausgeschrieben wird hier ein kleiner Anteil der Stellen (6.8%). 
 
