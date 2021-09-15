@@ -47,8 +47,10 @@ def prepare_data(data):
 	data = data.div(data["sum"], axis=0)*100
 	data.drop("sum", axis=1, inplace=True)
 	data.drop(["1-6", "~60", "66+", "other"], axis=1, inplace=True)
+	data = data[["unb.", "~48", "~36", "~24", "~12"]]
+	data = data.T
 	print(data)
-	return data.T
+	return data
 
 
 def viz(data): 
@@ -70,10 +72,10 @@ def viz(data):
 		range = (0,50))
 	chart.title = "Vertragslaufzeiten nach Fachgebieten"
 	chart.x_title = "Vertragslaufzeiten in Prozent"
-	chart.x_labels = ["~12 Monate", "~24 Monate", "~36 Monate", "~48 Monate", "unbefristet"]
-	chart.add("Litwiss.", data["lit"], formatter=lambda x: 'Lit.: {:.1f}%'.format(x))
-	chart.add("Ling.", data["ling"], formatter=lambda x: 'Ling.: {:.1f}%'.format(x))
-	chart.add("MKW", data["mkw"], formatter=lambda x: 'MKW: {:.1f}%'.format(x))
+	chart.x_labels = ["unbefristet", "~48 Monate", "~36 Monate", "~24 Monate", "~12 Monate"]
+	chart.add("Literaturwiss.", data["lit"], formatter=lambda x: 'Lit.: {:.1f}%'.format(x))
+	chart.add("Linguistik.", data["ling"], formatter=lambda x: 'Ling.: {:.1f}%'.format(x))
+	chart.add("Medien- und Kulturwiss.", data["mkw"], formatter=lambda x: 'MKW: {:.1f}%'.format(x))
 	chart.add("Fachdidaktik", data["fdid"], formatter=lambda x: 'Fachd.: {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-fachgebiete-synopse.svg")
 
