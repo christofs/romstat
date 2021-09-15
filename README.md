@@ -115,28 +115,33 @@ Mit Blick auf die Ausdifferenzierung der Romanistik nach Fachgebieten stellt sic
 
 Die hier unterschiedenen Fachgebiete ergeben sich aus der auf der Plattform romanistik.de genutzten Kategorisierung. Da sich viele Ausschreibungen auf mehr als ein Fachgebiet beziehen, kann hier eine Ausschreibung in mehreren Fachgebieten gezählt werden.  
 
-### (8.1) Vertragslaufzeiten bei Literaturwissenschaft
+### (8.1) Vertragslaufzeiten im Vergleich
+
+![](img/romanistik_laufzeit-fachgebiete-synopse.svg)
+
+
+### (8.2) Vertragslaufzeiten bei Literaturwissenschaft
 
 ![](img/romanistik_laufzeit-fachgebiete-litw.svg)
 
 In der Literaturwissenschaft dominiert die Laufzeit von rund 3 Jahren (48%), mit deutlichem Abstand zur Laufzeit von rund 2 Jahren (22.6). Unbefristet ausgeschrieben wird ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
-### (8.1) Vertragslaufzeiten bei Sprachwissenschaft
+### (8.3) Vertragslaufzeiten bei Sprachwissenschaft
 
 ![](img/romanistik_laufzeit-fachgebiete-sprachw.svg)
 
 In der Sprachwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (39.2%), allerdings weniger deutlich als in der Literaturwissenschaft und dichter gefolgt von den Laufzeiten von rund 2 Jahren (26.8%). Unbefristet ausgeschrieben wird ebenfalls ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
-### (8.1) Vertragslaufzeiten bei Medien- und Kulturwissenschaft
+### (8.4) Vertragslaufzeiten bei Medien- und Kulturwissenschaft
 
 ![](img/romanistik_laufzeit-fachgebiete-mkw.svg)
 
 In der Medien- und Kulturwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (40.8%), ähnlich wie in der Sprachwissenschaft und ebenfalls dichter gefolgt von den Laufzeiten von rund 2 Jahren (28%). Unbefristet ausgeschrieben wird ebenfalls ein etwas größerer Anteil der Stellen als in Sprach- und Literaturwissenschaft (8.1%).
 
 
-### (8.1) Vertragslaufzeiten bei Fachdidaktik
+### (8.5) Vertragslaufzeiten bei Fachdidaktik
 
 ![](img/romanistik_laufzeit-fachgebiete-fdid.svg)
 
