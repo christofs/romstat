@@ -8,13 +8,9 @@ from collections import Counter
 from pygal.style import LightenStyle
 
 
-domains = ["domain_lit", "domain_ling", "domain_mkw", "domain_fdid", "domain_other"]
-plotnames = ["litw", "sprachw", "mkw", "fdid", "andere"]
-titles = ["Literaturwiss.", 
-		"Sprachwiss.",
-		"Medien- und Kulturwiss.",
-		"Fachdidaktik",
-		"weitere Bereiche"]
+domains = ["lang_frz", "lang_spa", "lang_ita", "lang_por"]
+plotnames = ["frz", "spa", "ita", "por"]
+titles = ["Französisch", "Spanisch", "Italienisch", "Portugiesisch"]
 params = {"domains": domains, "plotnames":plotnames, "titles":titles}
 
 
@@ -74,13 +70,13 @@ def viz(data,n, params, i):
 	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 M.: {:.1f}%'.format(x))
 	chart.add("66+", data["66+"]/n*100, formatter=lambda x: '66+ M.: {:.1f}%'.format(x))
 	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unbefristet {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_laufzeit-" + params["plotnames"][i] +".svg")
+	chart.render_to_file("../img/romanistik_laufzeit-sprache-" + params["plotnames"][i] +".svg")
 			
 			
 
 
 def main(params): 
-	for i in range(0, 5):
+	for i in range(0, 4):
 		data = get_data()
 		data,n = prepare_data(data, params, i)
 		viz(data,n, params, i)
