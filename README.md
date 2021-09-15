@@ -83,28 +83,28 @@ Es wird deutlich, dass eine knappe Mehrheit (54%) der unbefristet ausgeschrieben
 
 In der umgekehrten Perspektive können die Vertragslaufzeiten auch in Abhängigkeit der Stellentypen aufgeschlüsselt werden. 
 
-![](img/romanistik_laufzeit-lektorat.svg)
+![](img/romanistik_laufzeit-stellentyp-lektorat.svg)
 
 Lektoratsstellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
 
 
 ### (7.3) Vertragslaufzeiten bei LfbA-Stellen
 
-![](img/romanistik_laufzeit-lfba.svg)
+![](img/romanistik_laufzeit-stellentyp-lfba.svg)
 
 Auch LfbA-Stellen werden überwiegend entweder als 2-Jahresstellen oder als unbefristete Stellen ausgeschrieben. 
 
 
 ### (7.4) Vertragslaufzeiten bei Ratsstellen
 
-![](img/romanistik_laufzeit-rat.svg)
+![](img/romanistik_laufzeit-stellentyp-rat.svg)
 
 Erwartungsgemäß werden Ratsstellen ganz überwiegend unbefristet ausgeschrieben. Sie sind die einzige Stellenkategorie, für die dies gilt. (Man beachte die kleine Gesamtanzahl von Ratsstellen, die die Aussagekraft der exakten Zahlen etwas einschränkt.) 
 
 
 ### (7.5) Vertragslaufzeiten bei WMA-Stellen
 
-![](img/romanistik_laufzeit-wma.svg)
+![](img/romanistik_laufzeit-stellentyp-wma.svg)
 
 Erwartungsgemäß werden WMA-Stellen überwiegend für 2 oder 3 Jahre ausgeschrieben. 
 
@@ -117,28 +117,28 @@ Die hier unterschiedenen Fachgebiete ergeben sich aus der auf der Plattform roma
 
 ### (8.1) Vertragslaufzeiten bei Literaturwissenschaft
 
-![](img/romanistik_laufzeit-fachgebiet-litw.svg)
+![](img/romanistik_laufzeit-fachgebiete-litw.svg)
 
 In der Literaturwissenschaft dominiert die Laufzeit von rund 3 Jahren (48%), mit deutlichem Abstand zur Laufzeit von rund 2 Jahren (22.6). Unbefristet ausgeschrieben wird ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
 ### (8.1) Vertragslaufzeiten bei Sprachwissenschaft
 
-![](img/romanistik_laufzeit-fachgebiet-sprachw.svg)
+![](img/romanistik_laufzeit-fachgebiete-sprachw.svg)
 
 In der Sprachwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (39.2%), allerdings weniger deutlich als in der Literaturwissenschaft und dichter gefolgt von den Laufzeiten von rund 2 Jahren (26.8%). Unbefristet ausgeschrieben wird ebenfalls ein sehr kleiner Anteil der Stellen (3.3%). 
 
 
 ### (8.1) Vertragslaufzeiten bei Medien- und Kulturwissenschaft
 
-![](img/romanistik_laufzeit-fachgebiet-mkw.svg)
+![](img/romanistik_laufzeit-fachgebiete-mkw.svg)
 
 In der Medien- und Kulturwissenschaft dominiert ebenfalls die Laufzeit von rund 3 Jahren (40.8%), ähnlich wie in der Sprachwissenschaft und ebenfalls dichter gefolgt von den Laufzeiten von rund 2 Jahren (28%). Unbefristet ausgeschrieben wird ebenfalls ein etwas größerer Anteil der Stellen als in Sprach- und Literaturwissenschaft (8.1%).
 
 
 ### (8.1) Vertragslaufzeiten bei Fachdidaktik
 
-![](img/romanistik_laufzeit-fachgebiet-fdid.svg)
+![](img/romanistik_laufzeit-fachgebiete-fdid.svg)
 
 In der Fachdidaktik dominiert ebenfalls die Laufzeit von rund 3 Jahren (43%), mit etwas Abstand gefolgt von der Laufzeit von rund 2 Jahren (23.1%). Unbefristet ausgeschrieben werden immerhin 11.9% der Stellen. 
 
@@ -147,13 +147,35 @@ In der Fachdidaktik dominiert ebenfalls die Laufzeit von rund 3 Jahren (43%), mi
 
 Die Kategorie "Weitere Bereiche" ist eine Sammelkategorie von romanistik.de. 
 
-![](img/romanistik_laufzeit-fachgebiet-andere.svg)
+![](img/romanistik_laufzeit-fachgebiete-andere.svg)
 
 In der Kategorie 'Weitere Bereiche' überwiegt, und das gibt es nur hier, die Laufzeit von rund 2 Jahren (39.2%) über die Laufzeit von rund 3 Jahren (32.4%). Unbefristet ausgeschrieben wird hier ein kleiner Anteil der Stellen (6.8%). 
 
 
 
-## (9) Entwicklung der Vertragslaufzeiten über die Zeit
+## (9) Vertraglaufzeiten nach Sprachen
+
+Ebenso wie nach Fachgebieten ist auch die Ausdifferenzierung nach Sprachen gegebenenfalls von Interesse. 
+
+### (9.1) Vertragslaufzeit bei Französisch
+
+![](img/romanistik_laufzeit-sprache-frz.svg)
+
+### (9.2) Vertragslaufzeit bei Spanisch
+
+![](img/romanistik_laufzeit-sprache-spa.svg)
+
+### (9.3) Vertragslaufzeit bei Italienisch
+
+![](img/romanistik_laufzeit-sprache-ita.svg)
+
+### (9.4) Vertragslaufzeit bei Portugiesisch
+
+![](img/romanistik_laufzeit-sprache-por.svg)
+
+
+
+## (10) Entwicklung der Vertragslaufzeiten über die Zeit
 
 ![](img/romanistik_jahr-dauer_barchart.svg)
 
