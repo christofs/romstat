@@ -115,10 +115,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
+  margin: 10px 0;
   font-family: Alegreya Sans, Impact, sans-serif;
-  font-size: 0.9em; 
-  line-height: 1.1; }
+  font-size: 0.8em; 
+  line-height: 1.0; }
 
 /* Remove trailing margins after titles */
 .reveal h1:last-child,
@@ -147,8 +147,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal dl,
 .reveal ul {
   display: inline-block;
-  font-size: 0.8em; 
-  line-height: 1.5; 
+  font-size: 0.7em; 
+  line-height: 1.2; 
   font-family: "Alegreya Sans", Lato, Impact, sans-serif;
   text-align: left;
   margin: 0 0 0 1em; }
