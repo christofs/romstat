@@ -38,7 +38,6 @@ def prepare_data(data, params, i):
 
 
 def viz(data,n, params, i, dataselection): 
-	print(i)
 	dark_lighten_style = LightenStyle('#788207',
 		step=10, 
 		font_family="FreeSans",
@@ -67,13 +66,15 @@ def viz(data,n, params, i, dataselection):
 
 def main(params): 
 	for i in range(0, 5):
+		print(i)
 		data = get_data()
 		data,n = prepare_data(data, params, i)
-		dataselection = [[data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
-						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
-						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
-						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
-						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100]]
+		dataselection = [[data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100],
+						 [data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100],
+						 [data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100],
+						 [data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100],
+						 [data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100],
+						 [data["unb."]/n*100,data["66+"]/n*100,data["~60"]/n*100,data["~48"]/n*100,data["~36"]/n*100,data["~24"]/n*100,data["~12"]/n*100,data["1-6"]/n*100]]
 		viz(data,n, params, i, dataselection)
 	
 
