@@ -84,7 +84,7 @@ def viz(data,n):
 					  data[4],
 					  data[3],
 					  data[2],
-					  0], formatter=lambda x: '{:.1f}%'.format(x))
+					  0], formatter=lambda x: '{:.0f}%'.format(x))
 	chart.render_to_file("../img/romanistik_alle-sws.svg")
 			
 			
