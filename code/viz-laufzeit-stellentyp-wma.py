@@ -25,7 +25,7 @@ def prepare_data(data):
 	data = data.fillna(0)
 	data = data.loc[:,["include", "dauer_cat", "pos_string"]]
 	data = data[data["include"] == 1]
-	data = data[data["pos_string"] == "LfbA"]
+	data = data[data["pos_string"] == "WMA"]
 	print(data.head())
 	n = data.shape[0]
 	print("Anzahl der Datenpunkte", n)
@@ -51,8 +51,8 @@ def viz(data,n):
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 9,
 		legend_box_size=24)
-	chart.title = "Vertragslaufzeiten"
-	chart.x_title = "Anteile der Vertragslaufzeiten in Prozent (n="+str(n)+")"
+	chart.title = "Vertragslaufzeiten (nur Lektoratsstellen)"
+	chart.x_title = "Anteile der Nennungen verschiedener Vertragslaufzeiten in Prozent (n="+str(n)+")"
 	chart.y_title = "Vertragslaufzeiten: Monate"
 	chart.x_labels = ["unb.", "66+", "~60", "~48", "~36", "~24", "~12", "1-6"]
 	chart.add("Laufzeiten", [data["unb."]/n*100,
@@ -63,7 +63,7 @@ def viz(data,n):
 							 data["~24"]/n*100,
 							 data["~12"]/n*100,
 							 data["1-6"]/n*100,], formatter=lambda x: '{:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_laufzeit-lfba.svg")
+	chart.render_to_file("../img/romanistik_laufzeit-stellentyp-wma.svg")
 			
 			
 
