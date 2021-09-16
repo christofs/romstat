@@ -68,13 +68,14 @@ def viz(data):
 		legend_at_bottom_columns = 8,
 		legend_box_size=32,
 		range = (0,80))
-	chart.title = "Vertragslaufzeiten nach Fachgebieten"
+	chart.title = "Vertragslaufzeiten nach Stellentyp"
 	chart.x_title = "Vertragslaufzeiten in Prozent"
-	chart.x_labels = ["unbefristet", "~48 Monate", "~36 Monate", "~24 Monate", "~12 Monate"]
-	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.1f}%'.format(x))
-	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.1f}%'.format(x))
-	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Ratst.: {:.1f}%'.format(x))
-	chart.add("WMA", data["wma"], formatter=lambda x: 'WMA: {:.1f}%'.format(x))
+	chart.y_title = "Monate"
+	chart.x_labels = ["unb.", "~48", "~36", "~24", "~12"]
+	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.0f}%'.format(x))
+	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.0f}%'.format(x))
+	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Rat.: {:.0f}%'.format(x))
+	chart.add("WMA", data["wma"], formatter=lambda x: 'WMA: {:.0f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-stellentyp-synopse.svg")
 
 
