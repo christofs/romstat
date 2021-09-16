@@ -19,27 +19,27 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "pos_lektorat", "pos_lfba", "pos_rat", "pos_wma", "dauer_cat"]]
+	data = data.loc[:,["include", "dauer_cat", "lang_frz", "lang_spa", "lang_ita", "lang_por"]]
 	data = data[data["include"] == 1]
 	#print(data.head())
 
-	lek = data[data["pos_lektorat"] == 1]
-	nlkek = lek.shape[0]
-	lek = pd.Series(dict(Counter(lek["dauer_cat"])), name="lek")
+	frz = data[data["lang_frz"] == 1]
+	nfrz = frz.shape[0]
+	frz = pd.Series(dict(Counter(frz["dauer_cat"])), name="frz")
 
-	lfba = data[data["pos_lfba"] == 1]
-	nlfba = lfba.shape[0]
-	lfba = pd.Series(dict(Counter(lfba["dauer_cat"])), name="lfba")
+	spa = data[data["lang_spa"] == 1]
+	nspa = spa.shape[0]
+	spa = pd.Series(dict(Counter(spa["dauer_cat"])), name="spa")
 
-	rat = data[data["pos_rat"] == 1]
-	nrat = rat.shape[0]
-	rat = pd.Series(dict(Counter(rat["dauer_cat"])), name="rat")
+	ita = data[data["lang_ita"] == 1]
+	nita = ita.shape[0]
+	ita = pd.Series(dict(Counter(ita["dauer_cat"])), name="ita")
 
-	wma = data[data["pos_wma"] == 1]
-	nwma = wma.shape[0]
-	wma = pd.Series(dict(Counter(wma["dauer_cat"])),name="wma")
+	por = data[data["lang_por"] == 1]
+	npor = por.shape[0]
+	por = pd.Series(dict(Counter(por["dauer_cat"])),name="por")
 
-	data = pd.DataFrame([lek, lfba, rat, wma])
+	data = pd.DataFrame([frz, spa, ita, por])
 	data["sum"] = np.sum(data, axis=1)
 	data = data.div(data["sum"], axis=0)*100
 	data.drop("sum", axis=1, inplace=True)
@@ -52,7 +52,7 @@ def prepare_data(data):
 
 
 def viz(data): 
-	dark_lighten_style = LightenStyle('#063d1e',
+	dark_lighten_style = LightenStyle('#788207',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,
@@ -68,15 +68,15 @@ def viz(data):
 		legend_at_bottom_columns = 8,
 		legend_box_size=32,
 		range = (0,80))
-	chart.title = "Vertragslaufzeiten nach Fachgebieten"
+	chart.title = "Vertragslaufzeiten nach Sprachen"
 	chart.x_title = "Vertragslaufzeiten in Prozent"
 	chart.y_title = "Monate"
 	chart.x_labels = ["unb.", "~48", "~36", "~24", "~12"]
-	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.1f}%'.format(x))
-	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.1f}%'.format(x))
-	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Ratst.: {:.1f}%'.format(x))
-	chart.add("WMA", data["wma"], formatter=lambda x: 'WMA: {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_laufzeit-stellentyp-synopse.svg")
+	chart.add("Französisch", data["frz"], formatter=lambda x: 'Frz.: {:.1f}%'.format(x))
+	chart.add("Spanisch", data["spa"], formatter=lambda x: 'Spa: {:.1f}%'.format(x))
+	chart.add("Italienisch.", data["ita"], formatter=lambda x: 'Ita.: {:.1f}%'.format(x))
+	chart.add("Portugiesisch", data["por"], formatter=lambda x: 'Por.: {:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_laufzeit-sprache-synopse.svg")
 
 
 def main(): 
