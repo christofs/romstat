@@ -54,7 +54,7 @@ def prepare_data(data):
 
 
 def viz(data): 
-	dark_lighten_style = LightenStyle('#004466',
+	dark_lighten_style = LightenStyle('#700d17',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,
@@ -72,7 +72,8 @@ def viz(data):
 		range = (0,50))
 	chart.title = "Vertragslaufzeiten nach Fachgebieten"
 	chart.x_title = "Vertragslaufzeiten in Prozent"
-	chart.x_labels = ["unbefristet", "~48 Monate", "~36 Monate", "~24 Monate", "~12 Monate"]
+	chart.y_title = "Monate"
+	chart.x_labels = ["unb.", "~48", "~36", "~24", "~12"]
 	chart.add("Literaturwiss.", data["lit"], formatter=lambda x: 'Lit.: {:.1f}%'.format(x))
 	chart.add("Linguistik.", data["ling"], formatter=lambda x: 'Ling.: {:.1f}%'.format(x))
 	chart.add("Medien- und Kulturwiss.", data["mkw"], formatter=lambda x: 'MKW: {:.1f}%'.format(x))
