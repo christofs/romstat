@@ -8,9 +8,9 @@ from collections import Counter
 from pygal.style import LightenStyle
 
 
-domains = ["lang_frz", "lang_spa", "lang_ita", "lang_por"]
-plotnames = ["frz", "spa", "ita", "por"]
-titles = ["Französisch", "Spanisch", "Italienisch", "Portugiesisch"]
+domains = ["lang_frz", "lang_spa", "lang_ita", "lang_por", "lang_diverse"]
+plotnames = ["frz", "spa", "ita", "por", "div"]
+titles = ["Französisch", "Spanisch", "Italienisch", "Portugiesisch", "sprachübergreifend"]
 params = {"domains": domains, "plotnames":plotnames, "titles":titles}
 
 
@@ -37,8 +37,9 @@ def prepare_data(data, params, i):
 	return data,n
 
 
-def viz(data,n, params, i): 
-	dark_lighten_style = LightenStyle('#004466',
+def viz(data,n, params, i, dataselection): 
+	print(i)
+	dark_lighten_style = LightenStyle('#788207',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,
@@ -56,30 +57,24 @@ def viz(data,n, params, i):
 		range = (0,50))
 	chart.title = "Vertragslaufzeiten (nur " + params["titles"][i] + ")"
 	chart.x_title = "Anteile der Vertragslaufzeiten in Prozent (n="+str(n)+")"
-	try: 
-		chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 M.: {:.1f}%'.format(x))
-	except: 
-		chart.add("1-6", 0, formatter=lambda x: '1-6 M.: {:.1f}%'.format(x))		
-	try: 
-		chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 M.: {:.1f}%'.format(x))
-	except: 
-		chart.add("~12", 0, formatter=lambda x: '~12 M.: {:.1f}%'.format(x))	
-	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M.: {:.1f}%'.format(x))
-	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '~36 M.: {:.1f}%'.format(x))
-	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '~48 M.: {:.1f}%'.format(x))
-	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 M.: {:.1f}%'.format(x))
-	chart.add("66+", data["66+"]/n*100, formatter=lambda x: '66+ M.: {:.1f}%'.format(x))
-	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unbefristet {:.1f}%'.format(x))
+	chart.y_title = "Monate"
+	chart.x_labels = ["unb.", "66+", "~60", "~48", "~36", "~24", "~12", "1-6"]
+	chart.add("Sprache", dataselection[i], formatter=lambda x: '{:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-sprache-" + params["plotnames"][i] +".svg")
 			
 			
 
 
 def main(params): 
-	for i in range(0, 4):
+	for i in range(0, 5):
 		data = get_data()
 		data,n = prepare_data(data, params, i)
-		viz(data,n, params, i)
+		dataselection = [[data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
+						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
+						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
+						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100],
+						 [data["1-6"]/n*100,data["~12"]/n*100,data["~24"]/n*100,data["~36"]/n*100,data["~48"]/n*100,data["~60"]/n*100,data["66+"]/n*100,data["unb."]/n*100]]
+		viz(data,n, params, i, dataselection)
 	
 
 main(params)	
