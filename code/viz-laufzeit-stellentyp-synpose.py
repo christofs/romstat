@@ -19,36 +19,34 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "domain_lit", "domain_ling", "domain_mkw", "domain_fdid", "domain_other", "dauer_cat", "domain_count"]]
+	data = data.loc[:,["include", "pos_lektorat", "pos_lfba", "pos_rat", "pos_wma", "dauer_cat"]]
 	data = data[data["include"] == 1]
-	data = data[data["domain_count"] > 0]
 	#print(data.head())
-	#print("Anzahl der Datenpunkte", n)
-	from collections import Counter
 
-	lit = data[data["domain_lit"] == 1]
-	nlit = lit.shape[0]
-	lit = pd.Series(dict(Counter(lit["dauer_cat"])), name="lit")
+	lek = data[data["pos_lektorat"] == 1]
+	nlkek = lek.shape[0]
+	lek = pd.Series(dict(Counter(lek["dauer_cat"])), name="lek")
 
-	ling = data[data["domain_ling"] == 1]
-	nling = ling.shape[0]
-	ling = pd.Series(dict(Counter(ling["dauer_cat"])), name="ling")
+	lfba = data[data["pos_lfba"] == 1]
+	nlfba = lfba.shape[0]
+	lfba = pd.Series(dict(Counter(lfba["dauer_cat"])), name="lfba")
 
-	fdid = data[data["domain_fdid"] == 1]
-	nfdid = fdid.shape[0]
-	fdid = pd.Series(dict(Counter(fdid["dauer_cat"])), name="fdid")
+	rat = data[data["pos_rat"] == 1]
+	nrat = rat.shape[0]
+	rat = pd.Series(dict(Counter(rat["dauer_cat"])), name="rat")
 
-	mkw = data[data["domain_mkw"] == 1]
-	nmkw = mkw.shape[0]
-	mkw = pd.Series(dict(Counter(mkw["dauer_cat"])),name="mkw")
+	wma = data[data["pos_wma"] == 1]
+	nwma = wma.shape[0]
+	wma = pd.Series(dict(Counter(wma["dauer_cat"])),name="wma")
 
-	data = pd.DataFrame([lit, ling, fdid, mkw])
+	data = pd.DataFrame([lek, lfba, rat, wma])
 	data["sum"] = np.sum(data, axis=1)
 	data = data.div(data["sum"], axis=0)*100
 	data.drop("sum", axis=1, inplace=True)
 	data.drop(["1-6", "~60", "66+", "other"], axis=1, inplace=True)
 	data = data[["unb.", "~48", "~36", "~24", "~12"]]
 	data = data.T
+	data = data.fillna(0)
 	print(data)
 	return data
 
@@ -60,7 +58,7 @@ def viz(data):
 		label_font_size = 12,
 		major_label_font_size = 12,
 		value_label_font_size = 12,
-		value_font_size = 12,
+		value_font_size = 10,
 		title_font_size = 16)
 	chart = pygal.HorizontalBar(
 		style=dark_lighten_style,
@@ -69,15 +67,15 @@ def viz(data):
     	legend_at_bottom = False,
 		legend_at_bottom_columns = 8,
 		legend_box_size=32,
-		range = (0,50))
+		range = (0,80))
 	chart.title = "Vertragslaufzeiten nach Fachgebieten"
 	chart.x_title = "Vertragslaufzeiten in Prozent"
 	chart.x_labels = ["unbefristet", "~48 Monate", "~36 Monate", "~24 Monate", "~12 Monate"]
-	chart.add("Literaturwiss.", data["lit"], formatter=lambda x: 'Lit.: {:.1f}%'.format(x))
-	chart.add("Linguistik.", data["ling"], formatter=lambda x: 'Ling.: {:.1f}%'.format(x))
-	chart.add("Medien- und Kulturwiss.", data["mkw"], formatter=lambda x: 'MKW: {:.1f}%'.format(x))
-	chart.add("Fachdidaktik", data["fdid"], formatter=lambda x: 'Fachd.: {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_laufzeit-fachgebiete-synopse.svg")
+	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.1f}%'.format(x))
+	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.1f}%'.format(x))
+	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Ratst.: {:.1f}%'.format(x))
+	chart.add("WMA", data["wma"], formatter=lambda x: 'WMA: {:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_laufzeit-stellentyp-synopse.svg")
 
 
 def main(): 
