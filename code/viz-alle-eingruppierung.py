@@ -51,16 +51,16 @@ def viz(data,n):
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 7,
 		legend_box_size=40)
-	chart.title = "Eingruppierung"
+	chart.title = "Eingruppierung (ohne E13 = 93%)"
 	chart.x_title = "Anteile der Gehaltsgruppen in Prozent (n="+str(n)+")"
 	chart.y_title = "Gehaltsgruppen"
-	chart.x_labels = ["A15", "E15", "A14", "E14", "A13", "E13", "E11"]
+	chart.x_labels = ["A15", "E15", "A14", "E14", "A13", "E12", "E11"]
 	chart.add("Gehaltsgruppen", [data["A15"]/n*100,
 								 data["E15"]/n*100,
 								 data["A14"]/n*100,
 								 data["E14"]/n*100,
 								 data["A13"]/n*100,
-								 data["E13"]/n*100,
+								 0,
 								 data["E11"]/n*100,], formatter=lambda x: '{:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_alle-eingruppierung.svg")
 			
