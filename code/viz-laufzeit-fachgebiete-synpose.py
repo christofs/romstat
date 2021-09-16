@@ -54,7 +54,7 @@ def prepare_data(data):
 
 
 def viz(data): 
-	dark_lighten_style = LightenStyle('#063d1e',
+	dark_lighten_style = LightenStyle('#004466',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,

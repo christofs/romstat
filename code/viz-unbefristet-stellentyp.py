@@ -14,7 +14,7 @@ from pygal.style import LightenStyle
 
 
 def get_data(): 
-	with open("../data/romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
+	with open("../data/romanistik-stellen_datensatz_2014-2021.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
 		print(data.head())
 		return data
@@ -53,12 +53,13 @@ def viz(data,n):
 		legend_box_size=40)
 	chart.title = "Stellentypen bei unbefristeten Stellen"
 	chart.x_title = "Anteil der Stellentypen in Prozent (n="+str(n)+")"
-	types = ["LfbA", "Lektorat", "Ratsstelle", "WMA", "other"]
-	chart.add("LfbA", data["LfbA"]/n*100, formatter=lambda x: 'LfbA: {:.1f}%'.format(x))
-	chart.add("Lektorat", data["Lektorat"]/n*100, formatter=lambda x: 'Lektorat: {:.1f}%'.format(x))
-	chart.add("Ratsstelle", data["Ratsstelle"]/n*100, formatter=lambda x: 'Ratsstelle: {:.1f}%'.format(x))
-	chart.add("WMA", data["WMA"]/n*100, formatter=lambda x: 'WMA: {:.1f}%'.format(x))
-	chart.add("(Andere)", data["other"]/n*100, formatter=lambda x: 'Andere: {:.1f}%'.format(x))
+	chart.y_title = "Stellentypen"
+	chart.x_labels = ["Andere", "WMA", "Ratsstelle", "Lektorat", "LfbA"]
+	chart.add("Stellentypen", [data["other"]/n*100,
+   							   data["WMA"]/n*100,
+   							   data["Ratsstelle"]/n*100,
+   							   data["Lektorat"]/n*100,
+   							   data["LfbA"]/n*100], formatter=lambda x: '{:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_unbefristete-stellentypen.svg")
 			
 			
