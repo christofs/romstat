@@ -23,13 +23,13 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "lang_string"]]
+	data = data.loc[:,["include", "jahr"]]
 	data = data[data["include"] == 1]
 	#print(data.head())
 	n = data.shape[0]
 	print("Anzahl der Datenpunkte", n)
 	from collections import Counter
-	data = dict(Counter(list(data.loc[:,"lang_string"])))
+	data = dict(Counter(list(data.loc[:,"jahr"])))
 	print(data)
 	return data,n
 
@@ -43,24 +43,26 @@ def viz(data,n):
 		value_label_font_size = 12,
 		value_font_size = 12,
 		title_font_size = 16)
-	chart = pygal.HorizontalBar(
+	chart = pygal.Bar(
 		style=dark_lighten_style,
 		print_values = True,
 		show_legend = False,
     	legend_at_bottom = False,
 		legend_at_bottom_columns = 8,
 		legend_box_size=32)
-	chart.title = "Sprachen"
-	chart.x_title = "Anteile der genannten Sprachen in Prozent (n="+str(n)+")"
-	chart.y_title = "Sprachen"
-	chart.x_labels = ["sprachüb.", "mehrere", "Port.", "Ital.", "Span.", "Franz."]
-	chart.add("Sprachen", [data["other"]/n*100,
-							   data["mult"]/n*100,
-							   data["por"]/n*100,
-							   data["ita"]/n*100,
-							   data["spa"]/n*100,
-							   data["frz"]/n*100], formatter=lambda x: '{:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_alle-sprachen.svg")
+	chart.title = "Stellenausschreibungen pro Jahr"
+	chart.x_title = "Anzahl der Stellenausschreibungen pro Jahr (n="+str(n)+")"
+	chart.y_title = "Anzahl"
+	chart.x_labels = ["2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]
+	chart.add("Jahre", [data[2021],
+					    data[2020],
+					    data[2019],
+					    data[2018],
+					    data[2017],
+					    data[2016],
+					    data[2015],
+					    data[2014],], formatter=lambda x: '{:.0f}'.format(x))
+	chart.render_to_file("../img/romanistik_alle-jahre.svg")
 			
 			
 
