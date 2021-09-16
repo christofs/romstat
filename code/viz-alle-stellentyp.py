@@ -14,7 +14,7 @@ from pygal.style import LightenStyle
 
 
 def get_data(): 
-	with open("../data/romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
+	with open("../data/romanistik-stellen_datensatz_2014-2021.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
 		#print(data.head())
 		return data
@@ -35,7 +35,7 @@ def prepare_data(data):
 
 
 def viz(data,n): 
-	dark_lighten_style = LightenStyle('#004466',
+	dark_lighten_style = LightenStyle('#063d1e',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,
@@ -52,16 +52,18 @@ def viz(data,n):
 		legend_box_size=32)
 	chart.title = "Stellentypen"
 	chart.x_title = "Anteile der Stellentypen in Prozent (n="+str(n)+")"
-	chart.add("LfbA", data["LfbA"]/n*100, formatter=lambda x: 'LfbA {:.1f}%'.format(x))
-	chart.add("Lektorat", data["Lektorat"]/n*100, formatter=lambda x: 'Lektorat {:.1f}%'.format(x))
-	chart.add("Ratsstelle", data["Ratsstelle"]/n*100, formatter=lambda x: 'Rat {:.1f}%'.format(x))
-	chart.add("WMA", data["WMA"]/n*100, formatter=lambda x: 'WMA allg. {:.1f}%'.format(x))
-	chart.add("Promotion", data["Promotion"]/n*100, formatter=lambda x: 'WMA (Promotion) {:.1f}%'.format(x))
-	chart.add("PostDoc", data["PostDoc"]/n*100, formatter=lambda x: 'WMA (PostDoc) {:.1f}%'.format(x))
-	chart.add("Projekt", data["Projekt"]/n*100, formatter=lambda x: 'WMA (Projekt) {:.1f}%'.format(x))
-	chart.add("Fellow", data["Projekt"]/n*100, formatter=lambda x: 'Fellowship {:.1f}%'.format(x))
-	chart.add("(Andere)", data["other"]/n*100, formatter=lambda x: 'Andere {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_stellentyp.svg")
+	chart.y_title = "Stellentypen"
+	chart.x_labels = ["Andere","Fellow","Projekt","PostDoc","Promotion","WMA","Ratsstelle","Lektorat", "LfbA"]
+	chart.add("Stellentypen", [data["other"]/n*100,
+							   data["Fellow"]/n*100,
+							   data["Projekt"]/n*100,
+							   data["PostDoc"]/n*100,
+							   data["Promotion"]/n*100,
+							   data["WMA"]/n*100,
+							   data["Ratsstelle"]/n*100,
+							   data["Lektorat"]/n*100,
+							   data["LfbA"]/n*100,], formatter=lambda x: '{:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_alle-stellentyp.svg")
 			
 			
 

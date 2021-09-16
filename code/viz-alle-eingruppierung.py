@@ -10,10 +10,11 @@ from pygal.style import DarkGreenBlueStyle
 from pygal.style import TurquoiseStyle
 from pygal.style import CleanStyle
 from collections import Counter
+from pygal.style import LightenStyle
 
 
 def get_data(): 
-	with open("romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
+	with open("../data/romanistik-stellen_datensatz_2014-2021.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
 		#print(data.head())
 		return data
@@ -35,23 +36,33 @@ def prepare_data(data):
 
 
 def viz(data,n): 
-	chart = pygal.Bar(
-		style=BlueStyle,
+	dark_lighten_style = LightenStyle('#063d1e',
+		step=10, 
+		font_family="FreeSans",
+		label_font_size = 12,
+		major_label_font_size = 12,
+		value_label_font_size = 12,
+		value_font_size = 10,
+		title_font_size = 16)
+	chart = pygal.HorizontalBar(
+		style=dark_lighten_style,
 		print_values = True,
-		show_legend = True,
+		show_legend = False,
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 7,
 		legend_box_size=40)
-	chart.title = "Gehaltsstufen"
-	chart.x_title = "Anteile der Gehaltsstufen\n(Daten von romanistik.de, 03/2014-07/2021, Stellen: "+str(n)+")"
-	chart.add("E11", data["E11"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E13", data["E13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A13", data["A13"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E14", data["E14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A14", data["A14"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("E15", data["E15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.add("A15", data["A15"]/n*100, formatter=lambda x: '{:.1f}%'.format(x))
-	chart.render_to_file("romanistik_gehalt.svg")
+	chart.title = "Eingruppierung"
+	chart.x_title = "Anteile der Gehaltsgruppen in Prozent (n="+str(n)+")"
+	chart.y_title = "Gehaltsgruppen"
+	chart.x_labels = ["A15", "E15", "A14", "E14", "A13", "E13", "E11"]
+	chart.add("Gehaltsgruppen", [data["A15"]/n*100,
+								 data["E15"]/n*100,
+								 data["A14"]/n*100,
+								 data["E14"]/n*100,
+								 data["A13"]/n*100,
+								 data["E13"]/n*100,
+								 data["E11"]/n*100,], formatter=lambda x: '{:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_alle-eingruppierung.svg")
 			
 			
 

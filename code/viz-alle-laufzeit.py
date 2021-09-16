@@ -14,7 +14,7 @@ from pygal.style import LightenStyle
 
 
 def get_data(): 
-	with open("../data/romanistik-stellen-datensatz_2021-09-09.csv", "r", encoding="utf8") as infile: 
+	with open("../data/romanistik-stellen_datensatz_2014-2021.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
 		print(data.head())
 		return data
@@ -35,7 +35,7 @@ def prepare_data(data):
 
 
 def viz(data,n): 
-	dark_lighten_style = LightenStyle('#004466',
+	dark_lighten_style = LightenStyle('#063d1e',
 		step=10, 
 		font_family="FreeSans",
 		label_font_size = 12,
@@ -52,15 +52,17 @@ def viz(data,n):
 		legend_box_size=24)
 	chart.title = "Vertragslaufzeiten"
 	chart.x_title = "Anteile der Vertragslaufzeiten in Prozent (n="+str(n)+")"
-	chart.add("1-6", data["1-6"]/n*100, formatter=lambda x: '1-6 M.: {:.1f}%'.format(x))
-	chart.add("~12", data["~12"]/n*100, formatter=lambda x: '~12 M.: {:.1f}%'.format(x))
-	chart.add("~24", data["~24"]/n*100, formatter=lambda x: '~24 M.: {:.1f}%'.format(x))
-	chart.add("~36", data["~36"]/n*100, formatter=lambda x: '~36 M.: {:.1f}%'.format(x))
-	chart.add("~48", data["~48"]/n*100, formatter=lambda x: '~48 M.: {:.1f}%'.format(x))
-	chart.add("~60", data["~60"]/n*100, formatter=lambda x: '~60 M.: {:.1f}%'.format(x))
-	chart.add("66+", data["66+"]/n*100, formatter=lambda x: '66+ M.: {:.1f}%'.format(x))
-	chart.add("unb.", data["unb."]/n*100, formatter=lambda x: 'unbefristet {:.1f}%'.format(x))
-	chart.render_to_file("../img/romanistik_befristungsdauer.svg")
+	chart.y_title = "Laufzeiten"
+	chart.x_labels = ["unbefristet","66+ M.","~60 M.","~48 M.","~36 M.","~24 M.","~12 M.","1-6 M."]
+	chart.add("Laufzeiten", [data["unb."]/n*100, 
+					  data["66+"]/n*100,
+					  data["~60"]/n*100,  
+					  data["~48"]/n*100, 
+					  data["~36"]/n*100, 
+					  data["~24"]/n*100, 
+					  data["~12"]/n*100, 
+					  data["1-6"]/n*100], formatter=lambda x: '{:.1f}%'.format(x))
+	chart.render_to_file("../img/romanistik_alle-befristungsdauer.svg")
 			
 			
 
