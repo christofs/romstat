@@ -42,9 +42,10 @@ def viz(data,n):
 		label_font_size = 12,
 		major_label_font_size = 12,
 		value_label_font_size = 12,
-		value_font_size = 12,
+		value_font_size = 14,
 		title_font_size = 16)
-	chart = pygal.HorizontalBar(
+	chart = pygal.Pie(inner_radius=.5,
+		stroke_style={'width': 4},
 		style=dark_lighten_style,
 		print_values = True,
 		show_legend = False,
@@ -53,13 +54,11 @@ def viz(data,n):
 		legend_box_size=40)
 	chart.title = "Stellentypen bei unbefristeten Stellen"
 	chart.x_title = "Anteil der Stellentypen in Prozent (n="+str(n)+")"
-	chart.y_title = "Stellentypen"
-	chart.x_labels = ["Andere", "WMA", "Ratsstelle", "Lektorat", "LfbA"]
-	chart.add("Stellentypen", [data["other"]/n*100,
-   							   data["WMA"]/n*100,
-   							   data["Ratsstelle"]/n*100,
-   							   data["Lektorat"]/n*100,
-   							   data["LfbA"]/n*100], formatter=lambda x: '{:.1f}%'.format(x))
+	chart.add("LfbA", data["LfbA"]/n*100, formatter=lambda x: 'LfbA {:.1f}%'.format(x))
+	chart.add("Lektorat", data["Lektorat"]/n*100, formatter=lambda x: 'Lekt. {:.1f}%'.format(x))
+	chart.add("Ratsstelle", data["Ratsstelle"]/n*100, formatter=lambda x: 'Rat {:.1f}%'.format(x))
+	chart.add("WMA", data["WMA"]/n*100, formatter=lambda x: 'WMA {:.1f}%'.format(x))
+	chart.add("Andere", data["other"]/n*100, formatter=lambda x: 'Andere {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_unbefristete-stellentypen.svg")
 			
 			
