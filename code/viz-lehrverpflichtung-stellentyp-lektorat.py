@@ -25,7 +25,7 @@ def prepare_data(data):
 	data = data.fillna(0)
 	data = data.loc[:,["include", "sws_äqv", "pos_string"]]
 	data = data[data["include"] == 1]
-	data = data[data["pos_string"] == "Rat"]
+	data = data[data["pos_string"] == "Ratsstelle"]
 	data = data[data["sws_äqv"] != "N/A"]
 	data = data[data["sws_äqv"] != 0]
 	#print(data.head())
