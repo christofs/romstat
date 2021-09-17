@@ -62,7 +62,7 @@ def viz(data,n):
 	chart.x_title = "Anteile der Lehrverpflichtungen in Prozent (n="+str(n)+")"
 	chart.y_title = "SWS (Vollzeit-Äquivalente)"
 	chart.x_labels = ["25", "24", "23", "22", "21", "20", "19", "18", "17", "16", "15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"]
-	chart.add("Laufzeiten", [data["25"]/n*100,
+	chart.add("SWS", [data["25"]/n*100,
 							 data["14"]/n*100,
 							 data["23"]/n*100,
 							 data["22"]/n*100,
