@@ -44,9 +44,9 @@ def prepare_data(data):
 
 	data = pd.DataFrame([lit, ling, fdid, mkw])
 	data["sum"] = np.sum(data, axis=1)
+	print(data)
 	data = data.div(data["sum"], axis=0)*100
 	data.drop("sum", axis=1, inplace=True)
-	data.drop(["1-6", "~60", "66+", "other"], axis=1, inplace=True)
 	data = data[["unb.", "~48", "~36", "~24", "~12"]]
 	data = data.T
 	print(data)

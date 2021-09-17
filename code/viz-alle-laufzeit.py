@@ -16,7 +16,7 @@ from pygal.style import LightenStyle
 def get_data(): 
 	with open("../data/romanistik-stellen_datensatz_2014-2021.csv", "r", encoding="utf8") as infile: 
 		data = pd.read_csv(infile, sep="\t")
-		print(data.head())
+		#print(data.head())
 		return data
 
 
@@ -25,7 +25,6 @@ def prepare_data(data):
 	data = data.fillna(0)
 	data = data.loc[:,["include", "dauer_cat"]]
 	data = data[data["include"] == 1]
-	print(data.head())
 	n = data.shape[0]
 	print("Anzahl der Datenpunkte", n)
 	from collections import Counter
