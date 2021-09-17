@@ -46,16 +46,16 @@ def prepare_data(data):
 	data = data.div(data["sum"], axis=0)*100
 	data.drop("sum", axis=1, inplace=True)
 	data = data.fillna(0)
-	print(data.T)
-	data = data[[4.0, 10.0, 12.0, 14.0, 15.0, 16.0, 17.0, 18.0, 20.0]]
 	data = data.T
+	data = data.drop(["10", "20", "8", "6", "0", "2", "5", "7", "23", "24"])
+	data = data.loc[["18", "17", "16","14","12","4"],:]
 	print(data)
 	return data
 
 
 def viz(data): 
-	dark_lighten_style = LightenStyle('#7724a3',
-		step=10, 
+	dark_lighten_style = LightenStyle('#4c1d54',
+		step=4, 
 		font_family="FreeSans",
 		label_font_size = 12,
 		major_label_font_size = 12,
@@ -73,7 +73,7 @@ def viz(data):
 	chart.title = "Lehrverpflichtung nach Stellentyp (Synopse)"
 	chart.x_title = "Lehrverpflichtung"
 	chart.y_title = "SWS"
-	chart.x_labels = ["4", "10",  "12", "14", "15", "16", "17", "18", "20"]
+	chart.x_labels = ["18", "17", "16", "14", "12", "4"]
 	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.0f}%'.format(x))
 	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.0f}%'.format(x))
 	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Rat.: {:.0f}%'.format(x))
