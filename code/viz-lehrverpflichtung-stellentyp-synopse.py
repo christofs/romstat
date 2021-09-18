@@ -69,9 +69,9 @@ def viz(data):
     	legend_at_bottom = False,
 		legend_at_bottom_columns = 8,
 		legend_box_size=32,
-		range = (0,70))
+		range = (0,50))
 	chart.title = "Lehrverpflichtung nach Stellentyp (Synopse)"
-	chart.x_title = "Lehrverpflichtung"
+	chart.x_title = "Anteile der Lehrverpflichtungen in Prozent"
 	chart.y_title = "SWS"
 	chart.x_labels = ["18", "17", "16", "14", "12", "4"]
 	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.0f}%'.format(x))
