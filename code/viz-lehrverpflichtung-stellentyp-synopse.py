@@ -47,8 +47,8 @@ def prepare_data(data):
 	data.drop("sum", axis=1, inplace=True)
 	data = data.fillna(0)
 	data = data.T
-	data = data.drop(["10", "20", "8", "6", "0", "2", "5", "7", "23", "24"])
-	data = data.loc[["18", "17", "16","14","12","4"],:]
+	data = data.drop(["10", "20", "6", "0", "2", "5", "7", "23", "24"])
+	data = data.loc[["18", "16","14","12", "4"],:]
 	print(data)
 	return data
 
@@ -73,7 +73,7 @@ def viz(data):
 	chart.title = "Lehrverpflichtung nach Stellentyp (Synopse)"
 	chart.x_title = "Anteile der Lehrverpflichtungen in Prozent"
 	chart.y_title = "SWS"
-	chart.x_labels = ["18", "17", "16", "14", "12", "4"]
+	chart.x_labels = ["18", "16", "14", "12", "4"]
 	chart.add("Lekt.", data["lek"], formatter=lambda x: 'Lekt.: {:.0f}%'.format(x))
 	chart.add("LfbA", data["lfba"], formatter=lambda x: 'LfbA: {:.0f}%'.format(x))
 	chart.add("Ratst.", data["rat"], formatter=lambda x: 'Rat.: {:.0f}%'.format(x))
