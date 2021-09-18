@@ -25,7 +25,7 @@ def prepare_data(data):
 	data = data.fillna(0)
 	data = data.loc[:,["include", "sws_äqv", "pos_string"]]
 	data = data[data["include"] == 1]
-	data = data[data["pos_string"] == "Ratsstelle"]
+	data = data[data["pos_string"] == "Lektorat"]
 	data = data[data["sws_äqv"] != "N/A"]
 	data = data[data["sws_äqv"] != 0]
 	#print(data.head())
@@ -88,7 +88,7 @@ def viz(data,n):
 							 data["2"]/n*100,
 							 data["1"]/n*100,
 							 data["0"]/n*100], formatter=lambda x: '{:.0f}%'.format(x))
-	chart.render_to_file("../img/romanistik_lehrverpflichtung-stellentyp-rat.svg")
+	chart.render_to_file("../img/romanistik_lehrverpflichtung-stellentyp-lektorat.svg")
 			
 			
 
