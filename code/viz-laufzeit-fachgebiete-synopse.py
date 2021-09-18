@@ -19,7 +19,7 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "domain_lit", "domain_ling", "domain_mkw", "domain_fdid", "domain_other", "dauer_cat", "domain_count"]]
+	data = data.loc[:,["include", "domain_lit", "domain_ling", "domain_mkw", "domain_fdid", "domain_spr", "domain_other", "dauer_cat", "domain_count"]]
 	data = data[data["include"] == 1]
 	data = data[data["domain_count"] > 0]
 	#print(data.head())
@@ -34,6 +34,10 @@ def prepare_data(data):
 	nling = ling.shape[0]
 	ling = pd.Series(dict(Counter(ling["dauer_cat"])), name="ling")
 
+	spr = data[data["domain_spr"] == 1]
+	nspr = spr.shape[0]
+	spr = pd.Series(dict(Counter(spr["dauer_cat"])), name="spr")
+	
 	fdid = data[data["domain_fdid"] == 1]
 	nfdid = fdid.shape[0]
 	fdid = pd.Series(dict(Counter(fdid["dauer_cat"])), name="fdid")
@@ -42,7 +46,7 @@ def prepare_data(data):
 	nmkw = mkw.shape[0]
 	mkw = pd.Series(dict(Counter(mkw["dauer_cat"])),name="mkw")
 
-	data = pd.DataFrame([lit, ling, fdid, mkw])
+	data = pd.DataFrame([lit, ling, spr, fdid, mkw])
 	data["sum"] = np.sum(data, axis=1)
 	print(data)
 	data = data.div(data["sum"], axis=0)*100
@@ -77,6 +81,7 @@ def viz(data):
 	chart.add("Literaturwiss.", data["lit"], formatter=lambda x: 'Lit.: {:.1f}%'.format(x))
 	chart.add("Linguistik.", data["ling"], formatter=lambda x: 'Ling.: {:.1f}%'.format(x))
 	chart.add("Medien- und Kulturwiss.", data["mkw"], formatter=lambda x: 'MKW: {:.1f}%'.format(x))
+	chart.add("Sprachpraxis", data["spr"], formatter=lambda x: 'Sprachpr.: {:.1f}%'.format(x))
 	chart.add("Fachdidaktik", data["fdid"], formatter=lambda x: 'Fachd.: {:.1f}%'.format(x))
 	chart.render_to_file("../img/romanistik_laufzeit-fachgebiete-synopse.svg")
 
