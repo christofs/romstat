@@ -53,15 +53,15 @@ def viz(data,n):
 	chart.title = "Stellenausschreibungen pro Jahr"
 	chart.x_title = "Anzahl der Stellenausschreibungen pro Jahr (n="+str(n)+")"
 	chart.y_title = "Anzahl"
-	chart.x_labels = ["2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]
-	chart.add("Jahre", [data[2021],
-					    data[2020],
-					    data[2019],
-					    data[2018],
-					    data[2017],
-					    data[2016],
+	chart.x_labels = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"]
+	chart.add("Jahre", [data[2014],
 					    data[2015],
-					    data[2014],], formatter=lambda x: '{:.0f}'.format(x))
+					    data[2016],
+					    data[2017],
+					    data[2018],
+					    data[2019],
+					    data[2020],
+					    data[2021]], formatter=lambda x: '{:.0f}'.format(x))
 	chart.render_to_file("../img/romanistik_alle-jahre.svg")
 			
 			
