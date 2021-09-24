@@ -23,18 +23,15 @@ def get_data():
 def prepare_data(data): 
 	# Filter down to useable data
 	data = data.fillna(0)
-	data = data.loc[:,["include", "umfang_sws", "umfang_prozent"]]
+	data = data.loc[:,["include", "sws_äqv", "umfang_prozent"]]
 	data = data[data["include"] == 1]
-	data = data[data["umfang_prozent"] != 0]
-	data = data[data["umfang_sws"] != 0]
+	data = data[data["sws_äqv"] != 0]
 	#print(data.head())
 	n = data.shape[0]
 	print("Anzahl der Datenpunkte", n)
 	from collections import Counter
-	data1 = list(data.loc[:,"umfang_sws"])
-	data2 = list(data.loc[:,"umfang_prozent"])
-	data3 = [round((i / j)*100) for i, j in zip(data1, data2) if j !=0]
-	data = dict(Counter(data3))
+	data = list(data.loc[:,"sws_äqv"])
+	data = dict(Counter(data))
 	print(data)
 	return data,n
 
@@ -54,6 +51,7 @@ def viz(data,n):
 		show_legend = False,
     	legend_at_bottom = True,
 		legend_at_bottom_columns = 7,
+		range = (0,24),
 		legend_box_size=40)
 	chart.title = "Lehrverpflichtung"
 	chart.x_title = "Anzahl der SWS (Vollzeit-Äquivalent) (n="+str(n)+")"
@@ -61,30 +59,31 @@ def viz(data,n):
 	chart.x_labels = ["24", "23", "22", "21", "20", "19", "18", "17", "16",
 					  "15", "14", "13", "12", "11", "10", "9", "8", "7",
 					   "6", "5", "4", "3", "2", "1"]
-	chart.add("SWS", [data[24]/n*100,
-					  data[23]/n*100,
+	chart.add("SWS", [data["24"]/n*100,
+					  data["23"]/n*100,
 					  0,
 					  0,
-					  data[20]/n*100,
+					  data["20"]/n*100,
 					  0,
-					  data[18]/n*100,
-					  data[17]/n*100,
-					  data[16]/n*100,
-					  data[15]/n*100,
-					  data[14]/n*100,
-					  data[13]/n*100,
-					  data[12]/n*100,
+					  data["18"]/n*100,
+					  data["17"]/n*100,
+					  data["16"]/n*100,
+					  data["15"]/n*100,
+					  data["14"]/n*100,
+					  data["13"]/n*100,
+					  data["12"]/n*100,
 					  0,
-					  data[10]/n*100,
-					  data[9]/n*100,
-					  data[8]/n*100,
-					  data[7]/n*100,
-					  data[6]/n*100,
-					  data[5]/n*100,
-					  data[4]/n*100,
-					  data[3]/n*100,
-					  data[2]/n*100,
-					  0], formatter=lambda x: '{:.0f}%'.format(x))
+					  data["10"]/n*100,
+					  data["9"]/n*100,
+					  data["8"]/n*100,
+					  data["7"]/n*100,
+					  data["6"]/n*100,
+					  data["5"]/n*100,
+					  data["4"]/n*100,
+					  data["3"]/n*100,
+					  data["2"]/n*100,
+					  0,
+					  data["0"]/n*100], formatter=lambda x: '{:.0f}%'.format(x))
 	chart.render_to_file("../img/romanistik_alle-sws.svg")
 			
 			
