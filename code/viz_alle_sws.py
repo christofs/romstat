@@ -72,7 +72,7 @@ def viz(data,n):
 					  data["14"]/n*100,
 					  data["13"]/n*100,
 					  data["12"]/n*100,
-					  0,
+					  data["11"]/n*100,
 					  data["10"]/n*100,
 					  data["9"]/n*100,
 					  data["8"]/n*100,
